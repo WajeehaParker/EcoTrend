@@ -6,7 +6,7 @@ services:
     ports:
       - '6379:6379'
     volumes:
-      - ./redisData:/volumes/redisVol
+      - ./redisData:/app/local_folder
     environment:
       - REDIS_ARGS= --save 20 1
     deploy:
@@ -49,6 +49,7 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - redis
+      - data_injestion
       - spark-master
       - spark-worker
     network_mode: service:redis

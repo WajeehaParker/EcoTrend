@@ -6,7 +6,5 @@ redis = redis.Redis(connection_pool=pool)
 
 ########## fetching data from redis ##########
 
-value = redis.get('mykey')
+value = redis.get("AFE:2020:EG.ELC.ACCS.RU.ZS")
 print(value)
-vehicles = redis.zrange('vehicles', 0, -1)
-print(vehicles)

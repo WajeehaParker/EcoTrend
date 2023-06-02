@@ -1,47 +1,28 @@
 import redis
-import csv
+import pandas as pd
 
 pool = redis.ConnectionPool(host='redis', port=6379, db=0)
 redis = redis.Redis(connection_pool=pool)
 
 ########## fetching and saving data ##########
+WDI_data_1 = pd.read_csv('/app/Imports/WDIEXCEL_Data_part1.csv')
+WDI_data_2 = pd.read_csv('/app/Imports/WDIEXCEL_Data_part2.csv')
 
+columns_to_drop = list(range(1960, 2000))
+columns_to_drop = [str(year) for year in columns_to_drop]
+WDI_data_1 = WDI_data_1.drop(columns=columns_to_drop)
+WDI_data_2 = WDI_data_2.drop(columns=columns_to_drop)
 
-"""with open("../DataSets/Education/Literacy_rate_among_adults_aged_15 years_in_percent.csv", 'r') as file:
-  csvreader = csv.reader(file)
-  for row in csvreader:
-    print(row)
+selected_countries=['AFE', 'CHN']
 
-file_path = "../DataSets/Education/Literacy_rate_among_adults_aged_15 years_in_percent.csv"
-du_literacyRate = pd.read_csv(file_path)
+for index, row in WDI_data_1.iterrows():
 
-print(edu_literacyRate)
-print("before loop")
+    if(row['Country Code'] in selected_countries):
+        country_code= row['Country Code']
+        indicator_code= row['Indicator Code']
 
-for index, row in edu_literacyRate.iterrows():
-    print("inside loop")
-    redis.set(f"Country:{index}", row['Country or Area'])
-    redis.set(f"Year:{index}", row['Year(s)'])
-    redis.set(f"literacy_rate:{index}", row['Value'])
+        for year in range(2000, 2021):
+            key=f'{country_code}:{year}:{indicator_code}'
+            value=str(row[str(year)])
+            redis.set(key, value)
 
-for index, row in edu_literacyRate.iterrows():
-    country_value = redis.get(f"Country:{index}")
-    year_value = redis.get(f"Year:{index}")
-    literacy_rate_value = redis.get(f"literacy_rate:{index}")
-    print(country_value)
-    print(year_value)
-    print(literacy_rate_value)"""
-
-
-
-########## end fetching and saving data ##########
-
-
-redis.set('mykey', 'Hello from Python!')
-value = redis.get('mykey')
-print(value)
-
-redis.zadd('vehicles', {'car' : 0})
-redis.zadd('vehicles', {'bike' : 0})
-vehicles = redis.zrange('vehicles', 0, -1)
-print(vehicles)
