@@ -23,25 +23,6 @@ services:
       - redis
     network_mode: service:redis
 
-  spark-master:
-    image: bde2020/spark-master:3.3.0-hadoop3.3
-    container_name: spark-master
-    ports:
-      - "8080:8080"
-      - "7077:7077"
-    environment:
-      - INIT_DAEMON_STEP=setup_spark
-
-  spark-worker:
-    image: bde2020/spark-worker:3.3.0-hadoop3.3
-    container_name: spark-worker
-    depends_on:
-      - spark-master
-    ports:
-      - "8081:8081"
-    environment:
-      - "SPARK_MASTER=spark://spark-master:7077"
-
   analytics:
     container_name: analytics
     build:
@@ -50,6 +31,28 @@ services:
     depends_on:
       - redis
       - data_injestion
+    network_mode: service:redis
+
+  spark-master:
+    image: bde2020/spark-master:3.3.0-hadoop3.3
+    container_name: spark-master
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    environment:
+      - INIT_DAEMON_STEP=setup_spark
+    
+  spark_ml:
+    image: bde2020/spark-base:3.3.0-hadoop3.3
+    container_name: spark_ml
+    build:
+      context: ./SparkML
+      dockerfile: Dockerfile
+    depends_on:
       - spark-master
-      - spark-worker
+      - data_injestion
+    environment:
+      - "SPARK_MASTER=spark://spark-master:7077"
+    volumes:
+      - ./SparkML:/app/sparkml
     network_mode: service:redis

@@ -25,9 +25,17 @@ for column in WDI_data.columns:
         mean_value = WDI_data[column].mean()
         WDI_data[column].fillna(mean_value, inplace=True)
 
-########## inserting data in redis ##########
+########## inserting values in redis (key starting with Values) ##########
 
-selected_indicators=['EG.ELC.ACCS.RU.ZS', 'EG.ELC.ACCS.RU.ZS']
+selected_indicators=['SP.POP.TOTL', 'SP.POP.TOTL.FE.IN' 'SP.POP.TOTL.MA.IN', 'SP.DYN.CBRT.IN', 'SP.DYN.CDRT.IN', 'SP.DYN.LE00.IN', 
+                     'SP.POP.GROW', 'IQ.CPA.GNDR.XQ', 'SH.XPD.CHEX.GD.ZS', 'SL.EMP.1524.SP.NE.ZS', 'SE.ADT.LITR.ZS', 'EG.ELC.ACCS.ZS',
+                     'SL.UEM.TOTL.NE.ZS', 'SL.UEM.1524.NE.ZS', 'NY.ADJ.NNTY.KD.ZG', 'FM.LBL.BMNY.GD.ZS', 'GC.DOD.TOTL.GD.ZS',
+                     'GC.DOD.TOTL.CN', 'BN.CAB.XOKA.GD.ZS', 'GC.XPN.TOTL.GD.ZS', 'GC.XPN.TOTL.CN', 'EG.USE.COMM.FO.ZS', 'NY.GDP.MKTP.KD.ZG',
+                     'GC.TAX.TOTL.GD.ZS', 'NY.GNS.ICTR.ZS', 'FP.CPI.TOTL.ZG', 'NY.GSR.NFCY.CD', 'NY.ADJ.AEDU.CD', 'SE.SEC.UNER.LO.ZS',
+                     'SL.TLF.0714.ZS', 'SE.PRM.UNER.ZS', 'SE.COM.DURS', 'SE.TER.CUAT.BA.ZS', 'SE.XPD.TOTL.GD.ZS', 'BN.CAB.XOKA.CD',
+                     'BX.GSR.ROYL.CD', 'BM.GSR.ROYL.CD', 'BX.GSR.TOTL.CD', 'BX.KLT.DINV.CD.WD', 'BX.GRT.EXTA.CD.WD', 'BM.GSR.TOTL.CD',
+                     'BM.GSR.NFSV.CD', 'BX.GRT.TECH.CD.WD', 'DT.DOD.DECT.CD', 'NY.GDP.MKTP.CD', 'NY.GDP.PCAP.CD', 'FI.RES.TOTL.CD',
+                     'GC.REV.XGRT.GD.ZS', 'BX.TRF.PWKR.CD.DT']
 
 for index, row in WDI_data.iterrows():
 
@@ -36,10 +44,27 @@ for index, row in WDI_data.iterrows():
         indicator_code= row['Indicator Code']
 
         for year in range(2000, 2021):
-            key=f'{country_code}:{year}:{indicator_code}'
+            key=f'Values:{country_code}:{year}:{indicator_code}'
             value=str(row[str(year)])
             redis.set(key, value)
 
-print("fetching data")
-print(redis.get("AFE:2020:EG.ELC.ACCS.RU.ZS"))
-print(redis.get("USA:2020:EG.ELC.ACCS.RU.ZS"))
+
+########## inserting indicators in redis (key starting with Indicators) ##########
+indicator_codes = WDI_data['Indicator Code'].unique()
+indicator_names = WDI_data['Indicator Name'].unique()
+
+for code, name in zip(indicator_codes, indicator_names):
+    if(code in selected_indicators):
+        redis.set(f'Indicator:{code}', name)
+
+print(redis.get("Indicator:SP.POP.TOTL"))
+
+########## inserting countries in redis (key starting with Countries) ##########
+indicator_codes = WDI_data['Country Code'].unique()
+indicator_names = WDI_data['Country Name'].unique()
+
+for code, name in zip(indicator_codes, indicator_names):
+    redis.set(f'Countries:{code}', name)
+
+print(redis.get("Countries:USA"))
+
