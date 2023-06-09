@@ -1,0 +1,2133 @@
+Microsoft Windows [Version 10.0.22621.1778]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>D:
+
+D:\>cd big.data
+
+D:\big.data>cd docker-hive
+
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-06 05:51 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+Found 1 items
+-rw-r--r--   3 root supergroup   18959430 2023-06-06 05:51 /user/root/NEW_TEST_BDA/FINAL.csv
+
+
+root@afc8bf2e48ae:/#
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+rating (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA property rights and rule-based governance rating (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA public sector management and institutions cluster average (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA quality of budgetary and financial management rating (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA quality of public administration rating (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA social protection rating (1=low to 6=high)    | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA structural policies cluster average (1=low to 6=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | CPIA trade rating (1=low to 6=high)                | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | "CPIA transparency                                 | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | Crop production index (2014-2016 = 100)            | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Current account balance (% of GDP)                 | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | "Current account balance (BoP                      | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Current education expenditure                     | NULL           | NULL            |
++------------------------------+------------------------+----------------------------------------------------+----------------+-----------------+
+|    wdi_data.country_name     | wdi_data.country_code  |                 wdi_data.indicator                 | wdi_data.year  | wdi_data.value  |
++------------------------------+------------------------+----------------------------------------------------+----------------+-----------------+
+| Africa Eastern and Southern  | AFE                    | "Current education expenditure                     | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Current education expenditure                     | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Current education expenditure                     | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | Current health expenditure (% of GDP)              | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Current health expenditure per capita (current US$) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | "Current health expenditure per capita             | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | Customs and other import duties (% of tax revenue) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Customs and other import duties (current LCU)      | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | "Death rate                                        | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Debt service (PPG and IMF only                    | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Debt service on external debt                     | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | "Debt service on external debt                     | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | DEC alternative conversion factor (LCU per US$)    | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Demand for family planning satisfied by modern methods (% of married women with demand for family planning) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Deposit interest rate (%)                          | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | "Depositors with commercial banks (per 1           | NULL           | NULL            |
+| Africa Eastern and Southern  | AFE                    | Depth of credit information index (0=low to 8=high) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Diabetes prevalence (% of population ages 20 to 79) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Diarrhea treatment (% of children under 5 receiving oral rehydration and continued feeding) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Diarrhea treatment (% of children under 5 who received ORS packet) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Disaster risk reduction progress score (1-5 scale; 5=best) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Discrepancy in expenditure estimate of GDP (constant LCU) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Discrepancy in expenditure estimate of GDP (current LCU) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic credit provided by financial sector (% of GDP) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic credit to private sector (% of GDP)       | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic credit to private sector by banks (% of GDP) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic general government health expenditure (% of current health expenditure) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic general government health expenditure (% of GDP) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic general government health expenditure (% of general government expenditure) | NULL           | 2004            |
+| Africa Eastern and Southern  | AFE                    | Domestic general government health expenditure per capita (current US$) | NULL           | 2004
+
+\big.data\docker-hive>-------+------------------------+----------------------------------------------------+----------------+-----------------+
+D:\big.data\docker-hive>.034 seconds)
+D:\big.data\docker-hive>t:10000> show tables;
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>econds)
+D:\big.data\docker-hive>t:10000> describe wdi_data;
+D:\big.data\docker-hive>---------+----------+
+D:\big.data\docker-hive>_type    | comment  |
+D:\big.data\docker-hive>---------+----------+
+D:\big.data\docker-hive>         |          |
+D:\big.data\docker-hive>         |          |
+D:\big.data\docker-hive>         |          |
+D:\big.data\docker-hive>         |          |
+D:\big.data\docker-hive>l(10,0)  |          |
+D:\big.data\docker-hive>---------+----------+
+D:\big.data\docker-hive>econds)
+D:\big.data\docker-hive>t:10000> delete * from wdi_data;
+D:\big.data\docker-hive>ssing statement: null (state=,code=1)
+D:\big.data\docker-hive>t:10000> drop table wdi_data;
+D:\big.data\docker-hive>seconds)
+D:\big.data\docker-hive>t:10000> show tables;
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>conds)
+D:\big.data\docker-hive>t:10000> select * from test;
+D:\big.data\docker-hive>---------------+--------------+
+D:\big.data\docker-hive>est.indicator  | test.amount  |
+D:\big.data\docker-hive>---------------+--------------+
+D:\big.data\docker-hive>---------------+--------------+
+D:\big.data\docker-hive>seconds)
+D:\big.data\docker-hive>t:10000> CREATE TABLE WDI_DATA( COUNTRY_NAME STRING, COUNTRY_CODE STRING, INDICATOR STRING, YEAR BIGINT, VALUE DECIMAL(40,10)
+D:\big.data\docker-hive>. . . .> ROW FORMAT DELIMITED
+D:\big.data\docker-hive>. . . .> FIELDS TERMINATED BY ','
+D:\big.data\docker-hive>. . . .> STORED AS TEXTFILE
+D:\big.data\docker-hive>. . . .> LOCATION '/user/root/NEW_TEST_BDA';
+D:\big.data\docker-hive>ling statement: FAILED: ParseException line 2:0 missing ) at 'ROW' near '<EOF>' (state=42000,code=40000)
+D:\big.data\docker-hive>t:10000> CREATE TABLE WDI_DATA( COUNTRY_NAME STRING, COUNTRY_CODE STRING, INDICATOR STRING, YEAR BIGINT, VALUE DECIMAL(40,10))
+D:\big.data\docker-hive>. . . .> ROW FORMAT DELIMITED
+D:\big.data\docker-hive>. . . .> FIELDS TERMINATED BY ','
+D:\big.data\docker-hive>. . . .> STORED AS TEXTFILE
+D:\big.data\docker-hive>. . . .> LOCATION '/user/root/NEW_TEST_BDA';
+D:\big.data\docker-hive>ling statement: FAILED: IllegalArgumentException Decimal precision out of allowed range [1,38] (state=42000,code=40000)
+D:\big.data\docker-hive>t:10000> CREATE TABLE WDI_DATA( COUNTRY_NAME STRING, COUNTRY_CODE STRING, INDICATOR STRING, YEAR BIGINT, VALUE DECIMAL(38,10)
+D:\big.data\docker-hive>. . . .> )
+D:\big.data\docker-hive>. . . .> ROW FORMAT DELIMITED
+D:\big.data\docker-hive>. . . .> FIELDS TERMINATED BY ','
+D:\big.data\docker-hive>. . . .> STORED AS TEXTFILE
+D:\big.data\docker-hive>. . . .> LOCATION '/user/root/NEW_TEST_BDA';
+D:\big.data\docker-hive>seconds)
+D:\big.data\docker-hive>t:10000> show tables;
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>econds)
+D:\big.data\docker-hive>t:10000> select * from wdi_data;
+D:\big.data\docker-hive>-+------------------------+---------------------+----------------+-----------------+
+D:\big.data\docker-hive> | wdi_data.country_code  | wdi_data.indicator  | wdi_data.year  | wdi_data.value  |
+D:\big.data\docker-hive>-+------------------------+---------------------+----------------+-----------------+
+D:\big.data\docker-hive>-+------------------------+---------------------+----------------+-----------------+
+D:\big.data\docker-hive>seconds)
+D:\big.data\docker-hive>t:10000> load data inpath
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+root@afc8bf2e48ae:/# !exit
+bash: !exit: event not found
+root@afc8bf2e48ae:/# exit
+exit
+
+D:\big.data\docker-hive>docker cp C:/Users/HP/Desktop/TestBDA/data/TEST.csv afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+CreateFile C:\Users\HP\Desktop\TestBDA\data\TEST.csv: The system cannot find the file specified.
+
+D:\big.data\docker-hive>docker cp C:/Users/HP/Desktop/TestBDA/data/TEST.csv afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+Successfully copied 3.07kB to afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+
+D:\big.data\docker-hive>docker exec afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-04 20:05 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+root@afc8bf2e48ae:/# hdfs dfs -copyFromLocal /tmp/TEST.csv /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+Found 1 items
+-rw-r--r--   3 root supergroup       1060 2023-06-04 20:15 /user/root/NEW_TEST_BDA/TEST.csv
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-04 20:15 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+root@afc8bf2e48ae:/# !quit
+bash: !quit: event not found
+root@afc8bf2e48ae:/# quit
+bash: quit: command not found
+root@afc8bf2e48ae:/# exit
+exit
+
+D:\big.data\docker-hive>docker-compose exec hive-server bash
+root@e6c78ab63567:/opt#
+0: jdbc:hive2://localhost:10000> show databases;
++----------------+
+| database_name  |
++----------------+
+| default        |
+| wdi            |
++----------------+
+2 rows selected (0.019 seconds)
+0: jdbc:hive2://localhost:10000> use wdi;
+No rows affected (0.018 seconds)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| test      |
+| wdi_data  |
++-----------+
+2 rows selected (0.03 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++------------------------------+-----------------+--------------+
+|      test.country_name       | test.indicator  | test.amount  |
++------------------------------+-----------------+--------------+
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
++------------------------------+-----------------+--------------+
+7 rows selected (0.121 seconds)
+0: jdbc:hive2://localhost:10000> select * from wdi_data limit 10;
++------------------------------+------------------------+----------------------------------------------------+----------------+------------------+
+|    wdi_data.country_name     | wdi_data.country_code  |                 wdi_data.indicator                 | wdi_data.year  |  wdi_data.value  |
++------------------------------+------------------------+----------------------------------------------------+----------------+------------------+
+| Africa Eastern and Southern  | AFE                    | Access to clean fuels and technologies for cooking (% of population) | NULL           | 1983.0000000000  |
+| Africa Eastern and Southern  | AFE                    | "Access to clean fuels and technologies for cooking | NULL           | NULL             |
+| Africa Eastern and Southern  | AFE                    | "Access to clean fuels and technologies for cooking | NULL           | NULL             |
+| Africa Eastern and Southern  | AFE                    | Access to electricity (% of population)            | NULL           | 1983.0000000000  |
+| Africa Eastern and Southern  | AFE                    | "Access to electricity                             | NULL           | NULL             |
+| Africa Eastern and Southern  | AFE                    | "Access to electricity                             | NULL           | NULL             |
+| Africa Eastern and Southern  | AFE                    | Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+) | NULL           | 1983.0000000000  |
++------------------------------+------------------------+----------------------------------------------------+----------------+------------------+
+7 rows selected (0.128 seconds)
+0: jdbc:hive2://localhost:10000> drop table wdi_data;
+No rows affected (0.111 seconds)
+0: jdbc:hive2://localhost:10000> select * from wdi_data limit 10;
+Error: Error while compiling statement: FAILED: SemanticException [Error 10001]: Line 1:14 Table not found 'wdi_data' (state=42S02,code=10001)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| test      |
++-----------+
+1 row selected (0.026 seconds)
+0: jdbc:hive2://localhost:10000> set hive.cli.print.header = 200;
+No rows affected (0.005 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++--------------------+-----------------+--------------+
+| test.country_name  | test.indicator  | test.amount  |
++--------------------+-----------------+--------------+
++--------------------+-----------------+--------------+
+No rows selected (0.127 seconds)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| test      |
++-----------+
+1 row selected (0.028 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++--------------------+-----------------+--------------+
+| test.country_name  | test.indicator  | test.amount  |
++--------------------+-----------------+--------------+
++--------------------+-----------------+--------------+
+No rows selected (0.151 seconds)
+0: jdbc:hive2://localhost:10000> create table new_wdi( country_name string, country_code string, indicator string, indicator_code string, year integer, value decimal(38,10))
+. . . . . . . . . . . . . . . .> row format delimited
+. . . . . . . . . . . . . . . .> fields terminated by ','
+. . . . . . . . . . . . . . . .> stored as textfile
+. . . . . . . . . . . . . . . .> location '/user/root/NEW_TEST_BDA';
+No rows affected (0.071 seconds)
+0: jdbc:hive2://localhost:10000> load data inpath '/user/root/NEW_TEST_BDA/TEST.csv' into table new_wdi;
+Error: Error while compiling statement: FAILED: SemanticException Line 1:17 Invalid path ''/user/root/NEW_TEST_BDA/TEST.csv'': No files matching path hdfs://namenode:8020/user/root/NEW_TEST_BDA/TEST.csv (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000> exit
+. . . . . . . . . . . . . . . .> !exit
+. . . . . . . . . . . . . . . .>
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-04 20:27 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# exit
+exit
+
+D:\big.data\docker-hive>docker cp  C:/Users/HP/Desktop/TestBDA/data/TEST.csv afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+Successfully copied 3.07kB to afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-04 20:27 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# hdfs dfs -copyFromLocal /tmp/TEST.csv /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+Found 1 items
+-rw-r--r--   3 root supergroup       1060 2023-06-05 10:36 /user/root/NEW_TEST_BDA/TEST.csv
+root@afc8bf2e48ae:/# exit
+exit
+
+D:\big.data\docker-hive>docker-compose exec hive-server bash
+root@e6c78ab63567:/opt# /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Connecting to jdbc:hive2://localhost:10000
+Connected to: Apache Hive (version 2.3.2)
+Driver: Hive JDBC (version 2.3.2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+Beeline version 2.3.2 by Apache Hive
+0: jdbc:hive2://localhost:10000> show databases;
++----------------+
+| database_name  |
++----------------+
+| default        |
+| wdi            |
++----------------+
+2 rows selected (0.111 seconds)
+0: jdbc:hive2://localhost:10000> use wdi;
+No rows affected (0.031 seconds)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| new_wdi   |
+| test      |
++-----------+
+2 rows selected (0.046 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++------------------------------+-----------------+--------------+
+|      test.country_name       | test.indicator  | test.amount  |
++------------------------------+-----------------+--------------+
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
++------------------------------+-----------------+--------------+
+7 rows selected (0.235 seconds)
+0: jdbc:hive2://localhost:10000> select * from new_wdi;
++------------------------------+-----------------------+----------------------------------------------------+----------------------------------+---------------+---------------------------+
+|     new_wdi.country_name     | new_wdi.country_code  |                 new_wdi.indicator                  |      new_wdi.indicator_code      | new_wdi.year  |       new_wdi.value       |
++------------------------------+-----------------------+----------------------------------------------------+----------------------------------+---------------+---------------------------+
+| Africa Eastern and Southern  | AFE                   | Access to clean fuels and technologies for cooking (% of population) | EG.CFT.ACCS.ZS                   | 1983          | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE                   | "Access to clean fuels and technologies for cooking |  rural (% of rural population)"  | NULL          | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE                   | "Access to clean fuels and technologies for cooking |  urban (% of urban population)"  | NULL          | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE                   | Access to electricity (% of population)            | EG.ELC.ACCS.ZS                   | 1983          | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE                   | "Access to electricity                             |  rural (% of rural population)"  | NULL          | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE                   | "Access to electricity                             |  urban (% of urban population)"  | NULL          | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+) | FX.OWN.TOTL.ZS                   | 1983          | 1099322987744.2500000000  |
++------------------------------+-----------------------+----------------------------------------------------+----------------------------------+---------------+---------------------------+
+7 rows selected (0.162 seconds)
+0: jdbc:hive2://localhost:10000> Select country_name, country_code, indicator_code, year, value from new_wdi;
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+|         country_name         | country_code  |          indicator_code          | year  |           value           |
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+| Africa Eastern and Southern  | AFE           | EG.CFT.ACCS.ZS                   | 1983  | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE           |  rural (% of rural population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           |  urban (% of urban population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           | EG.ELC.ACCS.ZS                   | 1983  | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE           |  rural (% of rural population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           |  urban (% of urban population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           | FX.OWN.TOTL.ZS                   | 1983  | 1099322987744.2500000000  |
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+7 rows selected (0.157 seconds)
+0: jdbc:hive2://localhost:10000> set hive.cli.print.header=200;
+No rows affected (0.008 seconds)
+0: jdbc:hive2://localhost:10000> Select country_name, country_code, indicator_code, year, value from new_wdi;
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+|         country_name         | country_code  |          indicator_code          | year  |           value           |
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+| Africa Eastern and Southern  | AFE           | EG.CFT.ACCS.ZS                   | 1983  | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE           |  rural (% of rural population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           |  urban (% of urban population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           | EG.ELC.ACCS.ZS                   | 1983  | 1099322987744.2500000000  |
+| Africa Eastern and Southern  | AFE           |  rural (% of rural population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           |  urban (% of urban population)"  | NULL  | 1983.0000000000           |
+| Africa Eastern and Southern  | AFE           | FX.OWN.TOTL.ZS                   | 1983  | 1099322987744.2500000000  |
++------------------------------+---------------+----------------------------------+-------+---------------------------+
+7 rows selected (0.196 seconds)
+0: jdbc:hive2://localhost:10000> delete * from new_wdi where country_code = 'AFE';
+Error: Error while processing statement: null (state=,code=1)
+0: jdbc:hive2://localhost:10000> delete * from new_wdi where year =1983;
+Error: Error while processing statement: null (state=,code=1)
+0: jdbc:hive2://localhost:10000> truncate table new_wdi;
+No rows affected (0.172 seconds)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| new_wdi   |
+| test      |
++-----------+
+2 rows selected (0.053 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++--------------------+-----------------+--------------+
+| test.country_name  | test.indicator  | test.amount  |
++--------------------+-----------------+--------------+
++--------------------+-----------------+--------------+
+No rows selected (0.121 seconds)
+0: jdbc:hive2://localhost:10000> select * from new_wdi;
++-----------------------+-----------------------+--------------------+-------------------------+---------------+----------------+
+| new_wdi.country_name  | new_wdi.country_code  | new_wdi.indicator  | new_wdi.indicator_code  | new_wdi.year  | new_wdi.value  |
++-----------------------+-----------------------+--------------------+-------------------------+---------------+----------------+
++-----------------------+-----------------------+--------------------+-------------------------+---------------+----------------+
+No rows selected (0.156 seconds)
+0: jdbc:hive2://localhost:10000> load data inpath '/user/root/NEW_TEST_BDA/TEST.csv' into table new_wdi;
+Error: Error while compiling statement: FAILED: SemanticException Line 1:17 Invalid path ''/user/root/NEW_TEST_BDA/TEST.csv'': No files matching path hdfs://namenode:8020/user/root/NEW_TEST_BDA/TEST.csv (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000> exit
+. . . . . . . . . . . . . . . .> !exit
+. . . . . . . . . . . . . . . .> ;
+Error: Error while compiling statement: FAILED: ParseException line 1:0 cannot recognize input near 'exit' '!' 'exit' (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000>
+D:\big.data\docker-hive>docker cp C:/Users/HP/Desktop/TestBDA/data/TEST.csv afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+Successfully copied 86kB to afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb:/tmp/
+
+D:\big.data\docker-hive>docker exec -it afc8bf2e48ae124169b241afd4d5f6408a5dadb3a2ff23a6cb83d9790eaa54bb /bin/bash
+root@afc8bf2e48ae:/# hdfs dfs -ls
+Found 2 items
+drwxr-xr-x   - root supergroup          0 2023-06-05 10:48 NEW_TEST_BDA
+drwxr-xr-x   - root supergroup          0 2023-06-04 19:37 output
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/output
+root@afc8bf2e48ae:/# hdfs dfs -copyFromLocal /tmp/TEST.csv /user/root/NEW_TEST_BDA
+root@afc8bf2e48ae:/# hdfs dfs -ls /user/root/NEW_TEST_BDA
+Found 1 items
+-rw-r--r--   3 root supergroup      84427 2023-06-06 04:09 /user/root/NEW_TEST_BDA/TEST.csv
+root@afc8bf2e48ae:/# exit
+exit
+
+D:\big.data\docker-hive>docker-compose exec e6c78ab635675baab19433170297ae701ec9d1342b91c97f738195167daf2390 bash
+service "e6c78ab635675baab19433170297ae701ec9d1342b91c97f738195167daf2390" is not running container #1
+
+D:\big.data\docker-hive>docker-compose exec e6c78ab635675baab19433170297ae701ec9d1342b91c97f738195167daf2390 bash
+service "e6c78ab635675baab19433170297ae701ec9d1342b91c97f738195167daf2390" is not running container #1
+
+D:\big.data\docker-hive>docker-compose exec hive-server bacsh
+OCI runtime exec failed: exec failed: unable to start container process: exec: "bacsh": executable file not found in $PATH: unknown
+
+D:\big.data\docker-hive>docker-compose exec hive-server bash
+root@e6c78ab63567:/opt# /opt/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+root@e6c78ab63567:/opt# /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Connecting to jdbc:hive2://localhost:10000
+Connected to: Apache Hive (version 2.3.2)
+Driver: Hive JDBC (version 2.3.2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+Beeline version 2.3.2 by Apache Hive
+0: jdbc:hive2://localhost:10000> show databases;
++----------------+
+| database_name  |
++----------------+
+| default        |
+| wdi            |
++----------------+
+2 rows selected (0.154 seconds)
+0: jdbc:hive2://localhost:10000> use wdi;
+No rows affected (0.043 seconds)
+0: jdbc:hive2://localhost:10000> show tables;
++-----------+
+| tab_name  |
++-----------+
+| new_wdi   |
+| test      |
++-----------+
+2 rows selected (0.052 seconds)
+0: jdbc:hive2://localhost:10000> select * from test;
++------------------------------+-----------------+--------------+
+|      test.country_name       | test.indicator  | test.amount  |
++------------------------------+-----------------+--------------+
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+| Africa Eastern and Southern  | AFE             | NULL         |
+
+674 rows selected (0.489 seconds)
+0: jdbc:hive2://localhost:10000> select * from new_wdi;
++------------------------------+-----------------------+----------------------------------------------------+---------------------------+---------------+---------------------------+
+|     new_wdi.country_name     | new_wdi.country_code  |                 new_wdi.indicator                  |  new_wdi.indicator_code   | new_wdi.year  |       new_wdi.value       |
++------------------------------+-----------------------+----------------------------------------------------+---------------------------+---------------+---------------------------+
+| Africa Eastern and Southern  | AFE                   | Access to clean fuels and technologies for cooking (% of population) | EG.CFT.ACCS.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Access to clean fuels and technologies for cooking rural (% of rural population) | EG.CFT.ACCS.RU.ZS         | 1983          | 1099320000000.0000000000  || Africa Eastern and Southern  | AFE                   | Access to clean fuels and technologies for cooking urban (% of urban population) | EG.CFT.ACCS.UR.ZS         | 1983          | 1099320000000.0000000000  || Africa Eastern and Southern  | AFE                   | Access to electricity (% of population)            | EG.ELC.ACCS.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Access to electricity rural (% of rural population) | EG.ELC.ACCS.RU.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Access to electricity urban (% of urban population) | EG.ELC.ACCS.UR.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+) | FX.OWN.TOTL.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider female (% of population ages 15+) | FX.OWN.TOTL.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider male (% of population ages 15+) | FX.OWN.TOTL.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider older adults (% of population ages 25+) | FX.OWN.TOTL.OL.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider poorest 40% (% of population ages 15+) | FX.OWN.TOTL.40.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider primary education or less (% of population ages 15+) | FX.OWN.TOTL.PL.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider richest 60% (% of population ages 15+) | FX.OWN.TOTL.60.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider secondary education or more (% of population ages 15+) | FX.OWN.TOTL.SO.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Account ownership at a financial institution or with a mobile-money-service provider young adults (% of population ages 15-24) | FX.OWN.TOTL.YG.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adequacy of social insurance programs (% of total welfare of beneficiary households) | per_si_allsi.adq_pop_tot  | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adequacy of social protection and labor programs (% of total welfare of beneficiary households) | per_allsp.adq_pop_tot     | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adequacy of social safety net programs (% of total welfare of beneficiary households) | per_sa_allsa.adq_pop_tot  | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adequacy of unemployment benefits and ALMP (% of total welfare of beneficiary households) | per_lm_alllm.adq_pop_tot  | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net enrollment rate primary (% of primary school age children) | SE.PRM.TENR               | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net enrollment rate primary female (% of primary school age children) | SE.PRM.TENR.FE            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net enrollment rate primary male (% of primary school age children) | SE.PRM.TENR.MA            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income (annual % growth)     | NY.ADJ.NNTY.KD.ZG         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income (constant 2015 US$)   | NY.ADJ.NNTY.KD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income (current US$)         | NY.ADJ.NNTY.CD            | 1983          | 136000000000.0000000000   |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income per capita (annual % growth) | NY.ADJ.NNTY.PC.KD.ZG      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income per capita (constant 2015 US$) | NY.ADJ.NNTY.PC.KD         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net national income per capita (current US$) | NY.ADJ.NNTY.PC.CD         | 1983          | 537.0880424000            |
+| Africa Eastern and Southern  | AFE                   | Adjusted net savings excluding particulate emission damage (% of GNI) | NY.ADJ.SVNX.GN.ZS         | 1983          | 5.9104611910              |
+| Africa Eastern and Southern  | AFE                   | Adjusted net savings excluding particulate emission damage (current US$) | NY.ADJ.SVNX.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net savings including particulate emission damage (% of GNI) | NY.ADJ.SVNG.GN.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted net savings including particulate emission damage (current US$) | NY.ADJ.SVNG.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: carbon dioxide damage (% of GNI) | NY.ADJ.DCO2.GN.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: carbon dioxide damage (current US$) | NY.ADJ.DCO2.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: consumption of fixed capital (% of GNI) | NY.ADJ.DKAP.GN.ZS         | 1983          | 13.4080410400             |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: consumption of fixed capital (current US$) | NY.ADJ.DKAP.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: education expenditure (% of GNI) | NY.ADJ.AEDU.GN.ZS         | 1983          | 4.5743278260              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: education expenditure (current US$) | NY.ADJ.AEDU.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: energy depletion (% of GNI)      | NY.ADJ.DNGY.GN.ZS         | 1983          | 1.4590495330              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: energy depletion (current US$)   | NY.ADJ.DNGY.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: gross savings (% of GNI)         | NY.ADJ.ICTR.GN.ZS         | 1983          | 19.8367726000             |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: mineral depletion (% of GNI)     | NY.ADJ.DMIN.GN.ZS         | 1983          | 1.9412170880              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: mineral depletion (current US$)  | NY.ADJ.DMIN.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: natural resources depletion (% of GNI) | NY.ADJ.DRES.GN.ZS         | 1983          | 5.3417931650              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: net forest depletion (% of GNI)  | NY.ADJ.DFOR.GN.ZS         | 1983          | 1.6923315740              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: net forest depletion (current US$) | NY.ADJ.DFOR.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: net national savings (% of GNI)  | NY.ADJ.NNAT.GN.ZS         | 1983          | 6.4287315600              |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: net national savings (current US$) | NY.ADJ.NNAT.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: particulate emission damage (% of GNI) | NY.ADJ.DPEM.GN.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adjusted savings: particulate emission damage (current US$) | NY.ADJ.DPEM.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adolescent fertility rate (births per 1000 women ages 15-19) | SP.ADO.TFRT               | 1983          | 139.7638066000            |
+| Africa Eastern and Southern  | AFE                   | Adolescents out of school (% of lower secondary school age) | SE.SEC.UNER.LO.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adolescents out of school female (% of female lower secondary school age) | SE.SEC.UNER.LO.FE.ZS      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adolescents out of school male (% of male lower secondary school age) | SE.SEC.UNER.LO.MA.ZS      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adults (ages 15+) and children (ages 0-14) newly infected with HIV | SH.HIV.INCD.TL            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Adults (ages 15-49) newly infected with HIV        | SH.HIV.INCD               | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Age dependency ratio (% of working-age population) | SP.POP.DPND               | 1983          | 95.0067167800             |
+| Africa Eastern and Southern  | AFE                   | Age dependency ratio old (% of working-age population) | SP.POP.DPND.OL            | 1983          | 5.7076854880              |
+| Africa Eastern and Southern  | AFE                   | Age dependency ratio young (% of working-age population) | SP.POP.DPND.YG            | 1983          | 88.7384491700             |
+| Africa Eastern and Southern  | AFE                   | Agricultural irrigated land (% of total agricultural land) | AG.LND.IRIG.AG.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural land (% of land area)                 | AG.LND.AGRI.ZS            | 1983          | 42.9450950900             |
+| Africa Eastern and Southern  | AFE                   | Agricultural land (sq. km)                         | AG.LND.AGRI.K2            | 1983          | 6257792.2000000000        |
+| Africa Eastern and Southern  | AFE                   | Agricultural machinery tractors                    | AG.AGR.TRAC.NO            | 1983          | 229950.0000000000         |
+| Africa Eastern and Southern  | AFE                   | Agricultural machinery tractors per 100 sq. km of arable land | AG.LND.TRAC.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural methane emissions (% of total)        | EN.ATM.METH.AG.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural methane emissions (thousand metric tons of CO2 equivalent) | EN.ATM.METH.AG.KT.CE      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural nitrous oxide emissions (% of total)  | EN.ATM.NOXE.AG.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural nitrous oxide emissions (thousand metric tons of CO2 equivalent) | EN.ATM.NOXE.AG.KT.CE      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural raw materials exports (% of merchandise exports) | TX.VAL.AGRI.ZS.UN         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agricultural raw materials imports (% of merchandise imports) | TM.VAL.AGRI.ZS.UN         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (% of GDP) | NV.AGR.TOTL.ZS            | 1983          | 13.1312609700             |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (annual % growth) | NV.AGR.TOTL.KD.ZG         | 1983          | -2.4095635040             |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (constant 2015 US$) | NV.AGR.TOTL.KD            | 1983          | 51995612523.0000000000    |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (constant LCU) | NV.AGR.TOTL.KN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (current LCU) | NV.AGR.TOTL.CN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added (current US$) | NV.AGR.TOTL.CD            | 1983          | 22969957688.0000000000    |
+| Africa Eastern and Southern  | AFE                   | Agriculture forestry and fishing value added per worker (constant 2015 US$) | NV.AGR.EMPL.KD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Air transport freight (million ton-km)             | IS.AIR.GOOD.MT.K1         | 1983          | 613.5999867000            |
+| Africa Eastern and Southern  | AFE                   | Air transport passengers carried                   | IS.AIR.PSGR               | 1983          | 8973900.0000000000        |
+| Africa Eastern and Southern  | AFE                   | Air transport registered carrier departures worldwide | IS.AIR.DPRT               | 1983          | 208000.0000000000         |
+| Africa Eastern and Southern  | AFE                   | Alternative and nuclear energy (% of total energy use) | EG.USE.COMM.CL.ZS         | 1983          | 1.2684083900              |
+| Africa Eastern and Southern  | AFE                   | Annual freshwater withdrawals agriculture (% of total freshwater withdrawal) | ER.H2O.FWAG.ZS            | 1983          | 81.0448479800             |
+| Africa Eastern and Southern  | AFE                   | Annual freshwater withdrawals domestic (% of total freshwater withdrawal) | ER.H2O.FWDM.ZS            | 1983          | 13.2599418500             |
+| Africa Eastern and Southern  | AFE                   | Annual freshwater withdrawals industry (% of total freshwater withdrawal) | ER.H2O.FWIN.ZS            | 1983          | 5.6952101710              |
+| Africa Eastern and Southern  | AFE                   | Annual freshwater withdrawals total (% of internal resources) | ER.H2O.FWTL.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Annual freshwater withdrawals total (billion cubic meters) | ER.H2O.FWTL.K3            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Annualized average growth rate in per capita real survey mean consumption or income bottom 40% of population (%) | SI.SPR.PC40.ZG            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Annualized average growth rate in per capita real survey mean consumption or income total population (%) | SI.SPR.PCAP.ZG            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Antiretroviral therapy coverage (% of people living with HIV) | SH.HIV.ARTC.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Antiretroviral therapy coverage for PMTCT (% of pregnant women living with HIV) | SH.HIV.PMTC.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Aquaculture production (metric tons)               | ER.FSH.AQUA.MT            | 1983          | 939.0000000000            |
+| Africa Eastern and Southern  | AFE                   | Arable land (% of land area)                       | AG.LND.ARBL.ZS            | 1983          | 5.4995291870              |
+| Africa Eastern and Southern  | AFE                   | Arable land (hectares per person)                  | AG.LND.ARBL.HA.PC         | 1983          | 0.2914755250              |
+| Africa Eastern and Southern  | AFE                   | Arable land (hectares)                             | AG.LND.ARBL.HA            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | ARI treatment (% of children under 5 taken to a health provider) | SH.STA.ARIC.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Armed forces personnel (% of total labor force)    | MS.MIL.TOTL.TF.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Armed forces personnel total                       | MS.MIL.TOTL.P1            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Arms exports (SIPRI trend indicator values)        | MS.MIL.XPRT.KD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Arms imports (SIPRI trend indicator values)        | MS.MIL.MPRT.KD            | 1983          | 1368000000.0000000000     |
+| Africa Eastern and Southern  | AFE                   | Automated teller machines (ATMs) (per 100000 adults) | FB.ATM.TOTL.P5            | 1983          | 1099320000000.0000000000  |
++------------------------------+-----------------------+----------------------------------------------------+---------------------------+---------------+---------------------------+
+|     new_wdi.country_name     | new_wdi.country_code  |                 new_wdi.indicator                  |  new_wdi.indicator_code   | new_wdi.year  |       new_wdi.value       |
++------------------------------+-----------------------+----------------------------------------------------+---------------------------+---------------+---------------------------+
+| Africa Eastern and Southern  | AFE                   | Average precipitation in depth (mm per year)       | AG.LND.PRCP.MM            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average time to clear exports through customs (days) | IC.CUS.DURS.EX            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average transaction cost of sending remittances from a specific country (%) | SI.RMT.COST.OB.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average transaction cost of sending remittances to a specific country (%) | SI.RMT.COST.IB.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average working hours of children study and work ages 7-14 (hours per week) | SL.TLF.0714.SW.TM         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average working hours of children study and work female ages 7-14 (hours per week) | SL.TLF.0714.SW.FE.TM      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average working hours of children study and work male ages 7-14 (hours per week) | SL.TLF.0714.SW.MA.TM      | 1983          | 1099320000000.0000000000  || Africa Eastern and Southern  | AFE                   | Average working hours of children working only ages 7-14 (hours per week) | SL.TLF.0714.WK.TM         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Average working hours of children working only female ages 7-14 (hours per week) | SL.TLF.0714.WK.FE.TM      | 1983          | 1099320000000.0000000000  || Africa Eastern and Southern  | AFE                   | Average working hours of children working only male ages 7-14 (hours per week) | SL.TLF.0714.WK.MA.TM      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bank capital to assets ratio (%)                   | FB.BNK.CAPA.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bank liquid reserves to bank assets ratio (%)      | FD.RES.LIQU.AS.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bank nonperforming loans to total gross loans (%)  | FB.AST.NPER.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Battle-related deaths (number of people)           | VC.BTL.DETH               | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Benefit incidence of social insurance programs to poorest quintile (% of total social insurance benefits) | per_si_allsi.ben_q1_tot   | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Benefit incidence of social protection and labor programs to poorest quintile (% of total SPL benefits) | per_allsp.ben_q1_tot      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Benefit incidence of social safety net programs to poorest quintile (% of total safety net benefits) | per_sa_allsa.ben_q1_tot   | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Benefit incidence of unemployment benefits and ALMP to poorest quintile (% of total U/ALMP benefits) | per_lm_alllm.ben_q1_tot   | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Binding coverage all products (%)                  | TM.TAX.MRCH.BC.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Binding coverage manufactured products (%)         | TM.TAX.MANF.BC.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Binding coverage primary products (%)              | TM.TAX.TCOM.BC.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bird species threatened                            | EN.BIR.THRD.NO            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Birth rate crude (per 1000 people)                 | SP.DYN.CBRT.IN            | 1983          | 46.1347289800             |
+| Africa Eastern and Southern  | AFE                   | Births attended by skilled health staff (% of total) | SH.STA.BRTC.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Borrowers from commercial banks (per 1000 adults)  | FB.CBK.BRWR.P3            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bound rate simple mean all products (%)            | TM.TAX.MRCH.BR.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bound rate simple mean manufactured products (%)   | TM.TAX.MANF.BR.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bound rate simple mean primary products (%)        | TM.TAX.TCOM.BR.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Bribery incidence (% of firms experiencing at least one bribe payment request) | IC.FRM.BRIB.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Broad money (% of GDP)                             | FM.LBL.BMNY.GD.ZS         | 1983          | 41.4722438700             |
+| Africa Eastern and Southern  | AFE                   | Broad money (current LCU)                          | FM.LBL.BMNY.CN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Broad money growth (annual %)                      | FM.LBL.BMNY.ZG            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Broad money to total reserves ratio                | FM.LBL.BMNY.IR.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Business extent of disclosure index (0=less disclosure to 10=more disclosure) | IC.BUS.DISC.XQ            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Capture fisheries production (metric tons)         | ER.FSH.CAPT.MT            | 1983          | 2009941.0000000000        |
+| Africa Eastern and Southern  | AFE                   | Cause of death by communicable diseases and maternal prenatal and nutrition conditions (% of total) | SH.DTH.COMM.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Cause of death by injury (% of total)              | SH.DTH.INJR.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Cause of death by non-communicable diseases (% of total) | SH.DTH.NCOM.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Central government debt total (% of GDP)           | GC.DOD.TOTL.GD.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Central government debt total (current LCU)        | GC.DOD.TOTL.CN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Cereal production (metric tons)                    | AG.PRD.CREL.MT            | 1983          | 31916865.0000000000       |
+| Africa Eastern and Southern  | AFE                   | Cereal yield (kg per hectare)                      | AG.YLD.CREL.KG            | 1983          | 1011.5881200000           |
+| Africa Eastern and Southern  | AFE                   | Changes in inventories (constant LCU)              | NE.GDI.STKB.KN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Changes in inventories (current LCU)               | NE.GDI.STKB.CN            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Changes in inventories (current US$)               | NE.GDI.STKB.CD            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Charges for the use of intellectual property payments (BoP current US$) | BM.GSR.ROYL.CD            | 1983          | 220912474.5000000000      |
+| Africa Eastern and Southern  | AFE                   | Charges for the use of intellectual property receipts (BoP current US$) | BX.GSR.ROYL.CD            | 1983          | 19119271.9700000000       |
+| Africa Eastern and Southern  | AFE                   | Chemicals (% of value added in manufacturing)      | NV.MNF.CHEM.ZS.UN         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in agriculture (% of economically active children ages 7-14) | SL.AGR.0714.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in agriculture female (% of female economically active children ages 7-14) | SL.AGR.0714.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in agriculture male (% of male economically active children ages 7-14) | SL.AGR.0714.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in manufacturing (% of economically active children ages 7-14) | SL.MNF.0714.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in manufacturing female (% of female economically active children ages 7-14) | SL.MNF.0714.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in manufacturing male (% of male economically active children ages 7-14) | SL.MNF.0714.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in services (% of economically active children ages 7-14) | SL.SRV.0714.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in services female (% of female economically active children ages 7-14) | SL.SRV.0714.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Child employment in services male (% of male economically active children ages 7-14) | SL.SRV.0714.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children (0-14) living with HIV                    | SH.HIV.0014               | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children (ages 0-14) newly infected with HIV       | SH.HIV.INCD.14            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment female (% of female children ages 7-14) | SL.TLF.0714.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment male (% of male children ages 7-14) | SL.TLF.0714.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment self-employed (% of children in employment ages 7-14) | SL.SLF.0714.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment self-employed female (% of female children in employment ages 7-14) | SL.SLF.0714.FE.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment self-employed male (% of male children in employment ages 7-14) | SL.SLF.0714.MA.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment study and work (% of children in employment ages 7-14) | SL.TLF.0714.SW.ZS         | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment study and work female (% of female children in employment ages 7-14) | SL.TLF.0714.SW.FE.ZS      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment study and work male (% of male children in employment ages 7-14) | SL.TLF.0714.SW.MA.ZS      | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment total (% of children ages 7-14) | SL.TLF.0714.ZS            | 1983          | 1099320000000.0000000000  |
+| Africa Eastern and Southern  | AFE                   | Children in employment unpaid family workers (% of children in employment ages 7-14) | SL.FAM.0714.ZS            | 1983          | 1099320000000.0000000000  |
+
+
+
+
+
++----------------------------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+|               wdi_final.country_name               | wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |   wdi_final.value   |
++----------------------------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+| Zambia                  | ZMB                     | SP.DYN.LE00.IN            | 2021            | 61.22300             |
+| Zambia                  | ZMB                     | SE.ADT.LITR.ZS            | 2021            | 9594000591603.51000  |
+| Zambia                  | ZMB                     | NY.GSR.NFCY.CD            | 2021            | -1921843994.00000    |
+| Zambia                  | ZMB                     | SP.POP.GROW               | 2021            | 2.84081              |
+| Zambia                  | ZMB                     | SP.POP.TOTL.FE.IN         | 2021            | 9864121.00000        |
+| Zambia                  | ZMB                     | SP.POP.TOTL.MA.IN         | 2021            | 9609004.00000        |
+| Zambia                  | ZMB                     | SP.POP.TOTL               | 2021            | 19473125.00000       |
+| Zambia                  | ZMB                     | GC.TAX.TOTL.GD.ZS         | 2021            | 16.74159             |
+| Zambia                  | ZMB                     | SL.UEM.TOTL.NE.ZS         | 2021            | 5.20000              |
+| Zambia                  | ZMB                     | SL.UEM.1524.NE.ZS         | 2021            | 9.30000              |
+| Zimbabwe                | ZWE                     | EG.ELC.ACCS.ZS            | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | NY.ADJ.NNTY.KD.ZG         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | NY.ADJ.AEDU.CD            | 2021            | 528539986.00000      |
+| Zimbabwe                | ZWE                     | SE.SEC.UNER.LO.ZS         | 2021            | 21.64072             |
+| Zimbabwe                | ZWE                     | SP.DYN.CBRT.IN            | 2021            | 30.53700             |
+| Zimbabwe                | ZWE                     | FM.LBL.BMNY.GD.ZS         | 2021            | 14.90191             |
+| Zimbabwe                | ZWE                     | GC.DOD.TOTL.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | GC.DOD.TOTL.CN            | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SL.TLF.0714.ZS            | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SE.PRM.UNER.ZS            | 2021            | 6.17238              |
+| Zimbabwe                | ZWE                     | SE.COM.DURS               | 2021            | 7.00000              |
+| Zimbabwe                | ZWE                     | IQ.CPA.GNDR.XQ            | 2021            | 4.00000              |
+| Zimbabwe                | ZWE                     | BN.CAB.XOKA.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SH.XPD.CHEX.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SP.DYN.CDRT.IN            | 2021            | 9.05700              |
+| Zimbabwe                | ZWE                     | SE.TER.CUAT.BA.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SL.EMP.1524.SP.NE.ZS      | 2021            | 41.33000             |
+| Zimbabwe                | ZWE                     | GC.XPN.TOTL.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | GC.XPN.TOTL.CN            | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | EG.USE.COMM.FO.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | NY.GDP.MKTP.KD.ZG         | 2021            | 8.46802              |
+| Zimbabwe                | ZWE                     | SE.XPD.TOTL.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | NY.GNS.ICTR.ZS            | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | FP.CPI.TOTL.ZG            | 2021            | 98.54611             |
+| Zimbabwe                | ZWE                     | SP.DYN.LE00.IN            | 2021            | 59.25300             |
+| Zimbabwe                | ZWE                     | SE.ADT.LITR.ZS            | 2021            | 89.70000             |
+| Zimbabwe                | ZWE                     | NY.GSR.NFCY.CD            | 2021            | -698988090.10000     |
+| Zimbabwe                | ZWE                     | SP.POP.GROW               | 2021            | 2.04571              |
+| Zimbabwe                | ZWE                     | SP.POP.TOTL.FE.IN         | 2021            | 8449834.00000        |
+| Zimbabwe                | ZWE                     | SP.POP.TOTL.MA.IN         | 2021            | 7543690.00000        |
+| Zimbabwe                | ZWE                     | SP.POP.TOTL               | 2021            | 15993524.00000       |
+| Zimbabwe                | ZWE                     | GC.TAX.TOTL.GD.ZS         | 2021            | 9594000591603.51000  |
+| Zimbabwe                | ZWE                     | SL.UEM.TOTL.NE.ZS         | 2021            | 9.54000              |
+| Zimbabwe                | ZWE                     | SL.UEM.1524.NE.ZS         | 2021            | 15.47000             |
++----------------------------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+189,244 rows selected (7.728 seconds)
+0: jdbc:hive2://localhost:10000> Select * from wdi_final where wdi_final.year >=2000 and wdi_final.year <=2022 limit 10;
++------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+|    wdi_final.country_name    | wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |   wdi_final.value   |
++------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+| Africa Eastern and Southern  | AFE                     | EG.ELC.ACCS.ZS            | 2000            | 19.95793            |
+| Africa Eastern and Southern  | AFE                     | NY.ADJ.NNTY.KD.ZG         | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | NY.ADJ.AEDU.CD            | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | SE.SEC.UNER.LO.ZS         | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | SP.DYN.CBRT.IN            | 2000            | 40.52824            |
+| Africa Eastern and Southern  | AFE                     | FM.LBL.BMNY.GD.ZS         | 2000            | 36.00178            |
+| Africa Eastern and Southern  | AFE                     | GC.DOD.TOTL.GD.ZS         | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | GC.DOD.TOTL.CN            | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | SL.TLF.0714.ZS            | 2000            | 923125019188.82200  |
+| Africa Eastern and Southern  | AFE                     | SE.PRM.UNER.ZS            | 2000            | 923125019188.82200  |
++------------------------------+-------------------------+---------------------------+-----------------+---------------------+
+10 rows selected (0.188 seconds)
+0: jdbc:hive2://localhost:10000> Select * from wdi_final where (wdi_final.year >=2000 and wdi_final.year <=2022 ) and wdi_final.country_code='USA' limit 10;
++-------------------------+-------------------------+---------------------------+-----------------+----------------------+
+| wdi_final.country_name  | wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |   wdi_final.value    |
++-------------------------+-------------------------+---------------------------+-----------------+----------------------+
+| United States           | USA                     | EG.ELC.ACCS.ZS            | 2000            | 100.00000            |
+| United States           | USA                     | NY.ADJ.NNTY.KD.ZG         | 2000            | 4.00743              |
+| United States           | USA                     | NY.ADJ.AEDU.CD            | 2000            | 469000000000.00000   |
+| United States           | USA                     | SE.SEC.UNER.LO.ZS         | 2000            | 923125019188.82200   |
+| United States           | USA                     | SP.DYN.CBRT.IN            | 2000            | 14.40000             |
+| United States           | USA                     | FM.LBL.BMNY.GD.ZS         | 2000            | 68.51417             |
+| United States           | USA                     | GC.DOD.TOTL.GD.ZS         | 2000            | 33.26765             |
+| United States           | USA                     | GC.DOD.TOTL.CN            | 2000            | 3410000000000.00000  |
+| United States           | USA                     | SL.TLF.0714.ZS            | 2000            | 923125019188.82200   |
+| United States           | USA                     | SE.PRM.UNER.ZS            | 2000            | 923125019188.82200   |
++-------------------------+-------------------------+---------------------------+-----------------+----------------------+
+10 rows selected (0.192 seconds)
+0: jdbc:hive2://localhost:10000> Select * from wdi_final where (wdi_final.year >=2000 and wdi_final.year <=2022 ) and wdi_final.country_code='USA' and wdi_final.indicator_code ='SOP.POP.TOTL' ;
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
+| wdi_final.country_name  | wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  | wdi_final.value  |
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
+No rows selected (0.298 seconds)
+0: jdbc:hive2://localhost:10000> select distinct wdi_final.indicator_code from wdi_final;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------------------------+
+| wdi_final.indicator_code  |
++---------------------------+
+| BHS                       |
+| BN.CAB.XOKA.GD.ZS         |
+| COD                       |
+| COG                       |
+| EG.ELC.ACCS.ZS            |
+| EG.USE.COMM.FO.ZS         |
+| EGY                       |
+| FM.LBL.BMNY.GD.ZS         |
+| FP.CPI.TOTL.ZG            |
+| FSM                       |
+| GC.DOD.TOTL.CN            |
+| GC.DOD.TOTL.GD.ZS         |
+| GC.TAX.TOTL.GD.ZS         |
+| GC.XPN.TOTL.CN            |
+| GC.XPN.TOTL.GD.ZS         |
+| GMB                       |
+| HKG                       |
+| IQ.CPA.GNDR.XQ            |
+| IRN                       |
+| Indicator_Code            |
+| KOR                       |
+| MAC                       |
+| NY.ADJ.AEDU.CD            |
+| NY.ADJ.NNTY.KD.ZG         |
+| NY.GDP.MKTP.KD.ZG         |
+| NY.GNS.ICTR.ZS            |
+| NY.GSR.NFCY.CD            |
+| PRK                       |
+| SE.ADT.LITR.ZS            |
+| SE.COM.DURS               |
+| SE.PRM.UNER.ZS            |
+| SE.SEC.UNER.LO.ZS         |
+| SE.TER.CUAT.BA.ZS         |
+| SE.XPD.TOTL.GD.ZS         |
+| SH.XPD.CHEX.GD.ZS         |
+| SL.EMP.1524.SP.NE.ZS      |
+| SL.TLF.0714.ZS            |
+| SL.UEM.1524.NE.ZS         |
+| SL.UEM.TOTL.NE.ZS         |
+| SP.DYN.CBRT.IN            |
+| SP.DYN.CDRT.IN            |
+| SP.DYN.LE00.IN            |
+| SP.POP.GROW               |
+| SP.POP.TOTL               |
+| SP.POP.TOTL.FE.IN         |
+| SP.POP.TOTL.MA.IN         |
+| VEN                       |
+| YEM                       |
++---------------------------+
+48 rows selected (1.352 seconds)
+0: jdbc:hive2://localhost:10000> Select * from wdi_final where (wdi_final.year >=2000 and wdi_final.year <=2022 ) and wdi_final.country_code='USA' and wdi_final.indicator_code ='SP.POP.TOTL' ;
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
+| wdi_final.country_name  | wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  | wdi_final.value  |
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
+| United States           | USA                     | SP.POP.TOTL               | 2000            | 282162411.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2001            | 284968955.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2002            | 287625193.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2003            | 290107933.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2004            | 292805298.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2005            | 295516599.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2006            | 298379912.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2007            | 301231207.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2008            | 304093966.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2009            | 306771529.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2010            | 309327143.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2011            | 311583481.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2012            | 313877662.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2013            | 316059947.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2014            | 318386329.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2015            | 320738994.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2016            | 323071755.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2017            | 325122128.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2018            | 326838199.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2019            | 328329953.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2020            | 331501080.00000  |
+| United States           | USA                     | SP.POP.TOTL               | 2021            | 331893745.00000  |
++-------------------------+-------------------------+---------------------------+-----------------+------------------+
+22 rows selected (0.3 seconds)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code, wdi_final.indicator_code, wdi_final.year, wdi_final.value/1000000 from wdi_final where (wdi_final.year >=2000 and wdi_final.year <=2022) and wdi_final.country_code='USA' and wdi_final.indicator_code='SP.POP.TOTL';
++-------------------------+---------------------------+-----------------+-------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |     _c3     |
++-------------------------+---------------------------+-----------------+-------------+
+| USA                     | SP.POP.TOTL               | 2000            | 282.162411  |
+| USA                     | SP.POP.TOTL               | 2001            | 284.968955  |
+| USA                     | SP.POP.TOTL               | 2002            | 287.625193  |
+| USA                     | SP.POP.TOTL               | 2003            | 290.107933  |
+| USA                     | SP.POP.TOTL               | 2004            | 292.805298  |
+| USA                     | SP.POP.TOTL               | 2005            | 295.516599  |
+| USA                     | SP.POP.TOTL               | 2006            | 298.379912  |
+| USA                     | SP.POP.TOTL               | 2007            | 301.231207  |
+| USA                     | SP.POP.TOTL               | 2008            | 304.093966  |
+| USA                     | SP.POP.TOTL               | 2009            | 306.771529  |
+| USA                     | SP.POP.TOTL               | 2010            | 309.327143  |
+| USA                     | SP.POP.TOTL               | 2011            | 311.583481  |
+| USA                     | SP.POP.TOTL               | 2012            | 313.877662  |
+| USA                     | SP.POP.TOTL               | 2013            | 316.059947  |
+| USA                     | SP.POP.TOTL               | 2014            | 318.386329  |
+| USA                     | SP.POP.TOTL               | 2015            | 320.738994  |
+| USA                     | SP.POP.TOTL               | 2016            | 323.071755  |
+| USA                     | SP.POP.TOTL               | 2017            | 325.122128  |
+| USA                     | SP.POP.TOTL               | 2018            | 326.838199  |
+| USA                     | SP.POP.TOTL               | 2019            | 328.329953  |
+| USA                     | SP.POP.TOTL               | 2020            | 331.501080  |
+| USA                     | SP.POP.TOTL               | 2021            | 331.893745  |
++-------------------------+---------------------------+-----------------+-------------+
+22 rows selected (0.288 seconds)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code , wdi_final.indicator_code, wdi_final.year, sum(wdi_final.value/1000000) from wdi_final where (wdi_final.year>=2000 and wdi_final.year<=2022) and wdi_final.country_code='USA' and wdi_final.indicator_code='SP.POP.TOTL' group by wdi_final.country_code, wdi_final.indicator_code, wdi_final.year;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------+-------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |     _c3     |
++-------------------------+---------------------------+-----------------+-------------+
+| USA                     | SP.POP.TOTL               | 2000            | 282.162411  |
+| USA                     | SP.POP.TOTL               | 2001            | 284.968955  |
+| USA                     | SP.POP.TOTL               | 2002            | 287.625193  |
+| USA                     | SP.POP.TOTL               | 2003            | 290.107933  |
+| USA                     | SP.POP.TOTL               | 2004            | 292.805298  |
+| USA                     | SP.POP.TOTL               | 2005            | 295.516599  |
+| USA                     | SP.POP.TOTL               | 2006            | 298.379912  |
+| USA                     | SP.POP.TOTL               | 2007            | 301.231207  |
+| USA                     | SP.POP.TOTL               | 2008            | 304.093966  |
+| USA                     | SP.POP.TOTL               | 2009            | 306.771529  |
+| USA                     | SP.POP.TOTL               | 2010            | 309.327143  |
+| USA                     | SP.POP.TOTL               | 2011            | 311.583481  |
+| USA                     | SP.POP.TOTL               | 2012            | 313.877662  |
+| USA                     | SP.POP.TOTL               | 2013            | 316.059947  |
+| USA                     | SP.POP.TOTL               | 2014            | 318.386329  |
+| USA                     | SP.POP.TOTL               | 2015            | 320.738994  |
+| USA                     | SP.POP.TOTL               | 2016            | 323.071755  |
+| USA                     | SP.POP.TOTL               | 2017            | 325.122128  |
+| USA                     | SP.POP.TOTL               | 2018            | 326.838199  |
+| USA                     | SP.POP.TOTL               | 2019            | 328.329953  |
+| USA                     | SP.POP.TOTL               | 2020            | 331.501080  |
+| USA                     | SP.POP.TOTL               | 2021            | 331.893745  |
++-------------------------+---------------------------+-----------------+-------------+
+22 rows selected (3.918 seconds)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code , wdi_final.indicator_code, wdi_final.year, sum(wdi_final.value/1000000) from wdi_final where (wdi_final.year>=2000 and wdi_final.year<=2022) and wdi_final.country_code='USA' and wdi_final.indicator_code='SP.POP.TOTL' group by wdi_final.country_code, wdi_final.indicator_code, wdi_final.year;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------+-------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | wdi_final.year  |     _c3     |
++-------------------------+---------------------------+-----------------+-------------+
+| USA                     | SP.POP.TOTL               | 2000            | 282.162411  |
+| USA                     | SP.POP.TOTL               | 2001            | 284.968955  |
+| USA                     | SP.POP.TOTL               | 2002            | 287.625193  |
+| USA                     | SP.POP.TOTL               | 2003            | 290.107933  |
+| USA                     | SP.POP.TOTL               | 2004            | 292.805298  |
+| USA                     | SP.POP.TOTL               | 2005            | 295.516599  |
+| USA                     | SP.POP.TOTL               | 2006            | 298.379912  |
+| USA                     | SP.POP.TOTL               | 2007            | 301.231207  |
+| USA                     | SP.POP.TOTL               | 2008            | 304.093966  |
+| USA                     | SP.POP.TOTL               | 2009            | 306.771529  |
+| USA                     | SP.POP.TOTL               | 2010            | 309.327143  |
+| USA                     | SP.POP.TOTL               | 2011            | 311.583481  |
+| USA                     | SP.POP.TOTL               | 2012            | 313.877662  |
+| USA                     | SP.POP.TOTL               | 2013            | 316.059947  |
+| USA                     | SP.POP.TOTL               | 2014            | 318.386329  |
+| USA                     | SP.POP.TOTL               | 2015            | 320.738994  |
+| USA                     | SP.POP.TOTL               | 2016            | 323.071755  |
+| USA                     | SP.POP.TOTL               | 2017            | 325.122128  |
+| USA                     | SP.POP.TOTL               | 2018            | 326.838199  |
+| USA                     | SP.POP.TOTL               | 2019            | 328.329953  |
+| USA                     | SP.POP.TOTL               | 2020            | 331.501080  |
+| USA                     | SP.POP.TOTL               | 2021            | 331.893745  |
++-------------------------+---------------------------+-----------------+-------------+
+22 rows selected (1.377 seconds)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code , wdi_final.indicator_code, sum(wdi_final.value/1000000) from wdi_final where (wdi_final.year>=2000 and wdi_final.year<=2022) and wdi_final.country_code='USA' and wdi_final.indicator_code='SP.POP.TOTL' group by wdi_final.country_code, wdi_final.indicator_code;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+--------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |     _c2      |
++-------------------------+---------------------------+--------------+
+| USA                     | SP.POP.TOTL               | 6800.393419  |
++-------------------------+---------------------------+--------------+
+1 row selected (1.321 seconds)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code , wdi_final.indicator_code, sum(wdi_final.value/1000000) from wdi_final where (wdi_final.year>=2000 and wdi_final.year<=2022) and wdi_final.country_code in ['USA','CHN','IND','PAK','BGD','KOR','JPN','ARE','RUS'] and wdi_final.indicator_code='SP.POP.TOTL' group by wdi_final.country_code, wdi_final.indicator_code;
+Error: Error while compiling statement: FAILED: ParseException line 1:186 cannot recognize input near '[' ''USA'' ',' in expression specification (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000> select wdi_final.country_code , wdi_final.indicator_code, sum(wdi_final.value/1000000) from wdi_final where (wdi_final.year>=2000 and wdi_final.year<=2022) and wdi_final.country_code in ('USA','CHN','IND','PAK','BGD','KOR','JPN','ARE','RUS') and wdi_final.indicator_code='SP.POP.TOTL' group by wdi_final.country_code, wdi_final.indicator_code;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      _c2      |
++-------------------------+---------------------------+---------------+
+| ARE                     | SP.POP.TOTL               | 155.497329    |
+| BGD                     | SP.POP.TOTL               | 3296.172196   |
+| CHN                     | SP.POP.TOTL               | 29557.770000  |
+| IND                     | SP.POP.TOTL               | 27380.542051  |
+| JPN                     | SP.POP.TOTL               | 2801.482593   |
+| PAK                     | SP.POP.TOTL               | 4276.147235   |
+| RUS                     | SP.POP.TOTL               | 3167.178372   |
+| USA                     | SP.POP.TOTL               | 6800.393419   |
++-------------------------+---------------------------+---------------+
+8 rows selected (1.325 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.POP.TOTL'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |   sum_value   |
++-------------------------+---------------------------+---------------+
+| CHN                     | SP.POP.TOTL               | 29557.770000  |
+| IND                     | SP.POP.TOTL               | 27380.542051  |
+| USA                     | SP.POP.TOTL               | 6800.393419   |
+| PAK                     | SP.POP.TOTL               | 4276.147235   |
+| BGD                     | SP.POP.TOTL               | 3296.172196   |
+| RUS                     | SP.POP.TOTL               | 3167.178372   |
+| JPN                     | SP.POP.TOTL               | 2801.482593   |
+| ARE                     | SP.POP.TOTL               | 155.497329    |
++-------------------------+---------------------------+---------------+
+8 rows selected (2.534 seconds)
+0: jdbc:hive2://localhost:10000> In this modified query, the ORDER BY clause is added at the end, specifying sum_value as the column to sort by. The DESC keyword is used to sort the values in descending order. If you prefer ascending order, you can omit DESC or explicitly use ASC.
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .> With this query, the result set will be sorted in descending order based on the sum_value column, which represents the sum of the values.
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .>
+. . . . . . . . . . . . . . . .> ;
+Error: Error while compiling statement: FAILED: ParseException line 1:0 cannot recognize input near 'In' 'this' 'modified' (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.POP.TOTL.FE.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |   sum_value   |
++-------------------------+---------------------------+---------------+
+| CHN                     | SP.POP.TOTL.FE.IN         | 14437.625341  |
+| IND                     | SP.POP.TOTL.FE.IN         | 13225.484117  |
+| USA                     | SP.POP.TOTL.FE.IN         | 3443.730773   |
+| PAK                     | SP.POP.TOTL.FE.IN         | 2085.632046   |
+| RUS                     | SP.POP.TOTL.FE.IN         | 1697.647000   |
+| BGD                     | SP.POP.TOTL.FE.IN         | 1644.151003   |
+| JPN                     | SP.POP.TOTL.FE.IN         | 1435.809662   |
+| ARE                     | SP.POP.TOTL.FE.IN         | 45.457716     |
++-------------------------+---------------------------+---------------+
+8 rows selected (2.444 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.POP.TOTL.MA.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |   sum_value   |
++-------------------------+---------------------------+---------------+
+| CHN                     | SP.POP.TOTL.MA.IN         | 15120.144663  |
+| IND                     | SP.POP.TOTL.MA.IN         | 14155.057930  |
+| USA                     | SP.POP.TOTL.MA.IN         | 3356.662648   |
+| PAK                     | SP.POP.TOTL.MA.IN         | 2190.515186   |
+| BGD                     | SP.POP.TOTL.MA.IN         | 1652.021194   |
+| RUS                     | SP.POP.TOTL.MA.IN         | 1469.531369   |
+| JPN                     | SP.POP.TOTL.MA.IN         | 1365.672933   |
+| ARE                     | SP.POP.TOTL.MA.IN         | 110.039613    |
++-------------------------+---------------------------+---------------+
+8 rows selected (2.431 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code IN ('SP.POP.TOTL', 'SP.POP.TOTL.FE.IN', 'SP.POP.TOTL.MA.IN')
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |   sum_value   |
++-------------------------+---------------------------+---------------+
+| CHN                     | SP.POP.TOTL               | 29557.770000  |
+| IND                     | SP.POP.TOTL               | 27380.542051  |
+| CHN                     | SP.POP.TOTL.MA.IN         | 15120.144663  |
+| CHN                     | SP.POP.TOTL.FE.IN         | 14437.625341  |
+| IND                     | SP.POP.TOTL.MA.IN         | 14155.057930  |
+| IND                     | SP.POP.TOTL.FE.IN         | 13225.484117  |
+| USA                     | SP.POP.TOTL               | 6800.393419   |
+| PAK                     | SP.POP.TOTL               | 4276.147235   |
+| USA                     | SP.POP.TOTL.FE.IN         | 3443.730773   |
+| USA                     | SP.POP.TOTL.MA.IN         | 3356.662648   |
+| BGD                     | SP.POP.TOTL               | 3296.172196   |
+| RUS                     | SP.POP.TOTL               | 3167.178372   |
+| JPN                     | SP.POP.TOTL               | 2801.482593   |
+| PAK                     | SP.POP.TOTL.MA.IN         | 2190.515186   |
+| PAK                     | SP.POP.TOTL.FE.IN         | 2085.632046   |
+| RUS                     | SP.POP.TOTL.FE.IN         | 1697.647000   |
+| BGD                     | SP.POP.TOTL.MA.IN         | 1652.021194   |
+| BGD                     | SP.POP.TOTL.FE.IN         | 1644.151003   |
+| RUS                     | SP.POP.TOTL.MA.IN         | 1469.531369   |
+| JPN                     | SP.POP.TOTL.FE.IN         | 1435.809662   |
+| JPN                     | SP.POP.TOTL.MA.IN         | 1365.672933   |
+| ARE                     | SP.POP.TOTL               | 155.497329    |
+| ARE                     | SP.POP.TOTL.MA.IN         | 110.039613    |
+| ARE                     | SP.POP.TOTL.FE.IN         | 45.457716     |
++-------------------------+---------------------------+---------------+
+24 rows selected (2.455 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .> wdi_final.country_code,
+. . . . . . . . . . . . . . . .> wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .> SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .> wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .> (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .> AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .> AND wdi_final.indicator_code IN ('SP.POP.TOTL', 'SP.POP.TOTL.FE.IN', 'SP.POP.TOTL.MA.IN')
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .> wdi_final.country_code,
+. . . . . . . . . . . . . . . .> wdi_final.indicator_code;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |   sum_value   |
++-------------------------+---------------------------+---------------+
+| ARE                     | SP.POP.TOTL               | 155.497329    |
+| ARE                     | SP.POP.TOTL.FE.IN         | 45.457716     |
+| ARE                     | SP.POP.TOTL.MA.IN         | 110.039613    |
+| BGD                     | SP.POP.TOTL               | 3296.172196   |
+| BGD                     | SP.POP.TOTL.FE.IN         | 1644.151003   |
+| BGD                     | SP.POP.TOTL.MA.IN         | 1652.021194   |
+| CHN                     | SP.POP.TOTL               | 29557.770000  |
+| CHN                     | SP.POP.TOTL.FE.IN         | 14437.625341  |
+| CHN                     | SP.POP.TOTL.MA.IN         | 15120.144663  |
+| IND                     | SP.POP.TOTL               | 27380.542051  |
+| IND                     | SP.POP.TOTL.FE.IN         | 13225.484117  |
+| IND                     | SP.POP.TOTL.MA.IN         | 14155.057930  |
+| JPN                     | SP.POP.TOTL               | 2801.482593   |
+| JPN                     | SP.POP.TOTL.FE.IN         | 1435.809662   |
+| JPN                     | SP.POP.TOTL.MA.IN         | 1365.672933   |
+| PAK                     | SP.POP.TOTL               | 4276.147235   |
+| PAK                     | SP.POP.TOTL.FE.IN         | 2085.632046   |
+| PAK                     | SP.POP.TOTL.MA.IN         | 2190.515186   |
+| RUS                     | SP.POP.TOTL               | 3167.178372   |
+| RUS                     | SP.POP.TOTL.FE.IN         | 1697.647000   |
+| RUS                     | SP.POP.TOTL.MA.IN         | 1469.531369   |
+| USA                     | SP.POP.TOTL               | 6800.393419   |
+| USA                     | SP.POP.TOTL.FE.IN         | 3443.730773   |
+| USA                     | SP.POP.TOTL.MA.IN         | 3356.662648   |
++-------------------------+---------------------------+---------------+
+24 rows selected (1.257 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.DYN.CBRT.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | sum_value  |
++-------------------------+---------------------------+------------+
+| PAK                     | SP.DYN.CBRT.IN            | 0.000694   |
+| BGD                     | SP.DYN.CBRT.IN            | 0.000489   |
+| IND                     | SP.DYN.CBRT.IN            | 0.000469   |
+| ARE                     | SP.DYN.CBRT.IN            | 0.000291   |
+| USA                     | SP.DYN.CBRT.IN            | 0.000285   |
+| CHN                     | SP.DYN.CBRT.IN            | 0.000268   |
+| RUS                     | SP.DYN.CBRT.IN            | 0.000247   |
+| JPN                     | SP.DYN.CBRT.IN            | 0.000183   |
++-------------------------+---------------------------+------------+
+8 rows selected (5.16 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.DYN.CDRT.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | sum_value  |
++-------------------------+---------------------------+------------+
+| RUS                     | SP.DYN.CDRT.IN            | 0.000316   |
+| JPN                     | SP.DYN.CDRT.IN            | 0.000212   |
+| USA                     | SP.DYN.CDRT.IN            | 0.000186   |
+| PAK                     | SP.DYN.CDRT.IN            | 0.000168   |
+| IND                     | SP.DYN.CDRT.IN            | 0.000167   |
+| CHN                     | SP.DYN.CDRT.IN            | 0.000149   |
+| BGD                     | SP.DYN.CDRT.IN            | 0.000136   |
+| ARE                     | SP.DYN.CDRT.IN            | 0.000030   |
++-------------------------+---------------------------+------------+
+8 rows selected (2.639 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value / 1000000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.DYN.LE00.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | sum_value  |
++-------------------------+---------------------------+------------+
+| JPN                     | SP.DYN.LE00.IN            | 0.001826   |
+| USA                     | SP.DYN.LE00.IN            | 0.001717   |
+| ARE                     | SP.DYN.LE00.IN            | 0.001712   |
+| CHN                     | SP.DYN.LE00.IN            | 0.001663   |
+| BGD                     | SP.DYN.LE00.IN            | 0.001519   |
+| RUS                     | SP.DYN.LE00.IN            | 0.001515   |
+| IND                     | SP.DYN.LE00.IN            | 0.001476   |
+| PAK                     | SP.DYN.LE00.IN            | 0.001418   |
++-------------------------+---------------------------+------------+
+8 rows selected (2.683 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .> wdi_final.country_code,
+. . . . . . . . . . . . . . . .> wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .> SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .> wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .> (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .> AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .> AND wdi_final.indicator_code = 'SP.DYN.LE00.IN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .> wdi_final.country_code,
+. . . . . . . . . . . . . . . .> wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .> sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |  sum_value  |
++-------------------------+---------------------------+-------------+
+| JPN                     | SP.DYN.LE00.IN            | 1825.17779  |
+| USA                     | SP.DYN.LE00.IN            | 1714.53898  |
+| ARE                     | SP.DYN.LE00.IN            | 1711.33900  |
+| CHN                     | SP.DYN.LE00.IN            | 1662.48900  |
+| BGD                     | SP.DYN.LE00.IN            | 1517.88800  |
+| RUS                     | SP.DYN.LE00.IN            | 1514.62439  |
+| IND                     | SP.DYN.LE00.IN            | 1475.77100  |
+| PAK                     | SP.DYN.LE00.IN            | 1419.04800  |
++-------------------------+---------------------------+-------------+
+8 rows selected (2.697 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SP.POP.GROW'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | sum_value  |
++-------------------------+---------------------------+------------+
+| ARE                     | SP.POP.GROW               | 110.63791  |
+| PAK                     | SP.POP.GROW               | 43.55606   |
+| IND                     | SP.POP.GROW               | 30.21591   |
+| BGD                     | SP.POP.GROW               | 28.97498   |
+| USA                     | SP.POP.GROW               | 17.34598   |
+| CHN                     | SP.POP.GROW               | 11.99329   |
+| JPN                     | SP.POP.GROW               | -0.75254   |
+| RUS                     | SP.POP.GROW               | -2.59108   |
++-------------------------+---------------------------+------------+
+8 rows selected (2.659 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'IQ.CPA.GNDR.XQ'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| USA                     | IQ.CPA.GNDR.XQ            | 65203565949323.21190  |
+| RUS                     | IQ.CPA.GNDR.XQ            | 65203565949323.21190  |
+| JPN                     | IQ.CPA.GNDR.XQ            | 65203565949323.21190  |
+| CHN                     | IQ.CPA.GNDR.XQ            | 65203565949323.21190  |
+| ARE                     | IQ.CPA.GNDR.XQ            | 65203565949323.21190  |
+| IND                     | IQ.CPA.GNDR.XQ            | 46239437514208.72510  |
+| BGD                     | IQ.CPA.GNDR.XQ            | 5645750368614.35990   |
+| PAK                     | IQ.CPA.GNDR.XQ            | 5645750368593.85990   |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.538 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SH.XPD.CHEX.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value       |
++-------------------------+---------------------------+----------------------+
+| USA                     | SH.XPD.CHEX.GD.ZS         | 9594000591930.60251  |
+| JPN                     | SH.XPD.CHEX.GD.ZS         | 9594000591796.42296  |
+| RUS                     | SH.XPD.CHEX.GD.ZS         | 9594000591713.56243  |
+| CHN                     | SH.XPD.CHEX.GD.ZS         | 9594000591699.14112  |
+| IND                     | SH.XPD.CHEX.GD.ZS         | 9594000591677.97126  |
+| ARE                     | SH.XPD.CHEX.GD.ZS         | 9594000591673.80759  |
+| BGD                     | SH.XPD.CHEX.GD.ZS         | 9594000591657.67769  |
+| PAK                     | SH.XPD.CHEX.GD.ZS         | 9594000591657.63435  |
++-------------------------+---------------------------+----------------------+
+8 rows selected (2.665 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SL.EMP.1524.SP.NE.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| CHN                     | SL.EMP.1524.SP.NE.ZS      | 65203565949323.21190  |
+| BGD                     | SL.EMP.1524.SP.NE.ZS      | 51045850705256.66430  |
+| ARE                     | SL.EMP.1524.SP.NE.ZS      | 34537423824301.60520  |
+| IND                     | SL.EMP.1524.SP.NE.ZS      | 31244240417998.51830  |
+| PAK                     | SL.EMP.1524.SP.NE.ZS      | 22869154866385.98120  |
+| USA                     | SL.EMP.1524.SP.NE.ZS      | 1116.78000            |
+| JPN                     | SL.EMP.1524.SP.NE.ZS      | 916.15000             |
+| RUS                     | SL.EMP.1524.SP.NE.ZS      | 709.89000             |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.516 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.ADT.LITR.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| USA                     | SE.ADT.LITR.ZS            | 65203565949323.21190  |
+| JPN                     | SE.ADT.LITR.ZS            | 65203565949323.21190  |
+| IND                     | SE.ADT.LITR.ZS            | 55805407590522.09718  |
+| CHN                     | SE.ADT.LITR.ZS            | 51950835734446.75848  |
+| RUS                     | SE.ADT.LITR.ZS            | 51677202351565.19760  |
+| ARE                     | SE.ADT.LITR.ZS            | 47145817084815.41999  |
+| PAK                     | SE.ADT.LITR.ZS            | 27816622914549.69876  |
+| BGD                     | SE.ADT.LITR.ZS            | 23226820150746.98275  |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.636 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'EG.ELC.ACCS.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value       |
++-------------------------+---------------------------+----------------------+
+| USA                     | EG.ELC.ACCS.ZS            | 9594000593703.51000  |
+| JPN                     | EG.ELC.ACCS.ZS            | 9594000593703.51000  |
+| ARE                     | EG.ELC.ACCS.ZS            | 9594000593703.51000  |
+| RUS                     | EG.ELC.ACCS.ZS            | 9594000593699.01000  |
+| CHN                     | EG.ELC.ACCS.ZS            | 9594000593684.11909  |
+| IND                     | EG.ELC.ACCS.ZS            | 9594000593214.30087  |
+| PAK                     | EG.ELC.ACCS.ZS            | 9594000593099.39778  |
+| BGD                     | EG.ELC.ACCS.ZS            | 9594000592867.15676  |
++-------------------------+---------------------------+----------------------+
+8 rows selected (2.488 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SL.UEM.TOTL.NE.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| BGD                     | SL.UEM.TOTL.NE.ZS         | 45606979217361.95130  |
+| IND                     | SL.UEM.TOTL.NE.ZS         | 31244240417818.45830  |
+| ARE                     | SL.UEM.TOTL.NE.ZS         | 28681017481662.35860  |
+| PAK                     | SL.UEM.TOTL.NE.ZS         | 15874415470369.47670  |
+| CHN                     | SL.UEM.TOTL.NE.ZS         | 6798114323204.98200   |
+| RUS                     | SL.UEM.TOTL.NE.ZS         | 144.07000             |
+| USA                     | SL.UEM.TOTL.NE.ZS         | 131.04000             |
+| JPN                     | SL.UEM.TOTL.NE.ZS         | 88.18000              |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.545 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SL.UEM.1524.NE.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| BGD                     | SL.UEM.1524.NE.ZS         | 47607285268225.05570  |
+| CHN                     | SL.UEM.1524.NE.ZS         | 38399942916186.23090  |
+| ARE                     | SL.UEM.1524.NE.ZS         | 33188434797074.49060  |
+| IND                     | SL.UEM.1524.NE.ZS         | 31244240417908.96830  |
+| PAK                     | SL.UEM.1524.NE.ZS         | 19427460292256.15010  |
+| RUS                     | SL.UEM.1524.NE.ZS         | 357.17000             |
+| USA                     | SL.UEM.1524.NE.ZS         | 272.82000             |
+| JPN                     | SL.UEM.1524.NE.ZS         | 160.91000             |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.557 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'NY.ADJ.NNTY.KD.ZG'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| ARE                     | NY.ADJ.NNTY.KD.ZG         | 11554730015007.08638  |
+| CHN                     | NY.ADJ.NNTY.KD.ZG         | 9594000591790.11317   |
+| IND                     | NY.ADJ.NNTY.KD.ZG         | 9594000591733.29884   |
+| BGD                     | NY.ADJ.NNTY.KD.ZG         | 9594000591721.73077   |
+| RUS                     | NY.ADJ.NNTY.KD.ZG         | 9594000591699.94028   |
+| PAK                     | NY.ADJ.NNTY.KD.ZG         | 9594000591672.64126   |
+| USA                     | NY.ADJ.NNTY.KD.ZG         | 9594000591641.62392   |
+| JPN                     | NY.ADJ.NNTY.KD.ZG         | 9594000591613.98828   |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.716 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'FM.LBL.BMNY.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| RUS                     | FM.LBL.BMNY.GD.ZS         | 10517125611.727054  |
+| JPN                     | FM.LBL.BMNY.GD.ZS         | 4.926013            |
+| CHN                     | FM.LBL.BMNY.GD.ZS         | 3.837134            |
+| USA                     | FM.LBL.BMNY.GD.ZS         | 1.875283            |
+| IND                     | FM.LBL.BMNY.GD.ZS         | 1.602345            |
+| ARE                     | FM.LBL.BMNY.GD.ZS         | 1.496495            |
+| BGD                     | FM.LBL.BMNY.GD.ZS         | 1.160877            |
+| PAK                     | FM.LBL.BMNY.GD.ZS         | 1.086921            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.596 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'GC.DOD.TOTL.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| CHN                     | GC.DOD.TOTL.GD.ZS         | 65203565949.323214  |
+| PAK                     | GC.DOD.TOTL.GD.ZS         | 64280440930.201145  |
+| ARE                     | GC.DOD.TOTL.GD.ZS         | 62225945603.470754  |
+| BGD                     | GC.DOD.TOTL.GD.ZS         | 61802751752.523122  |
+| IND                     | GC.DOD.TOTL.GD.ZS         | 22487517469.320833  |
+| RUS                     | GC.DOD.TOTL.GD.ZS         | 2488262543.496102   |
+| JPN                     | GC.DOD.TOTL.GD.ZS         | 3.559619            |
+| USA                     | GC.DOD.TOTL.GD.ZS         | 1.758366            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.699 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'GC.DOD.TOTL.CN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value        |
++-------------------------+---------------------------+------------------------+
+| JPN                     | GC.DOD.TOTL.CN            | 18849000000000.000000  |
+| IND                     | GC.DOD.TOTL.CN            | 808687517468.281789    |
+| USA                     | GC.DOD.TOTL.CN            | 298230000000.000000    |
+| RUS                     | GC.DOD.TOTL.CN            | 188578262543.125929    |
+| PAK                     | GC.DOD.TOTL.CN            | 67110440930.134392     |
+| CHN                     | GC.DOD.TOTL.CN            | 65203565949.323214     |
+| BGD                     | GC.DOD.TOTL.CN            | 64809751752.428592     |
+| ARE                     | GC.DOD.TOTL.CN            | 62253073530.684908     |
++-------------------------+---------------------------+------------------------+
+8 rows selected (2.544 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'BN.CAB.XOKA.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| ARE                     | BN.CAB.XOKA.GD.ZS         | 65203565949.323214  |
+| RUS                     | BN.CAB.XOKA.GD.ZS         | 0.135484            |
+| CHN                     | BN.CAB.XOKA.GD.ZS         | 0.071904            |
+| JPN                     | BN.CAB.XOKA.GD.ZS         | 0.065017            |
+| BGD                     | BN.CAB.XOKA.GD.ZS         | 0.005110            |
+| IND                     | BN.CAB.XOKA.GD.ZS         | -0.027219           |
+| PAK                     | BN.CAB.XOKA.GD.ZS         | -0.040775           |
+| USA                     | BN.CAB.XOKA.GD.ZS         | -0.075168           |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.53 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'GC.XPN.TOTL.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| CHN                     | GC.XPN.TOTL.GD.ZS         | 65203565949.323214  |
+| PAK                     | GC.XPN.TOTL.GD.ZS         | 64280440930.149889  |
+| IND                     | GC.XPN.TOTL.GD.ZS         | 22487517468.579489  |
+| ARE                     | GC.XPN.TOTL.GD.ZS         | 16437505125.935863  |
+| BGD                     | GC.XPN.TOTL.GD.ZS         | 923125019.368952    |
+| RUS                     | GC.XPN.TOTL.GD.ZS         | 0.571152            |
+| USA                     | GC.XPN.TOTL.GD.ZS         | 0.506122            |
+| JPN                     | GC.XPN.TOTL.GD.ZS         | 0.375335            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.584 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'GC.XPN.TOTL.CN'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-------------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |        sum_value        |
++-------------------------+---------------------------+-------------------------+
+| JPN                     | GC.XPN.TOTL.CN            | 1983100000000000.00000  |
+| RUS                     | GC.XPN.TOTL.CN            | 355840000000000.00000   |
+| IND                     | GC.XPN.TOTL.CN            | 261397517468281.78900   |
+| USA                     | GC.XPN.TOTL.CN            | 82420000000000.00000    |
+| CHN                     | GC.XPN.TOTL.CN            | 65203565949323.21190    |
+| PAK                     | GC.XPN.TOTL.CN            | 64938440930134.38990    |
+| BGD                     | GC.XPN.TOTL.CN            | 24280125019188.82200    |
+| ARE                     | GC.XPN.TOTL.CN            | 17097223051949.64070    |
++-------------------------+---------------------------+-------------------------+
+8 rows selected (2.654 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'EG.USE.COMM.FO.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| ARE                     | EG.USE.COMM.FO.ZS         | 41699304501057.25450  |
+| RUS                     | EG.USE.COMM.FO.ZS         | 37464256449722.51834  |
+| CHN                     | EG.USE.COMM.FO.ZS         | 37464256449646.93512  |
+| IND                     | EG.USE.COMM.FO.ZS         | 37464256449385.01171  |
+| BGD                     | EG.USE.COMM.FO.ZS         | 37464256449359.41728  |
+| PAK                     | EG.USE.COMM.FO.ZS         | 37464256449259.88615  |
+| JPN                     | EG.USE.COMM.FO.ZS         | 34250434422800.43702  |
+| USA                     | EG.USE.COMM.FO.ZS         | 34250434422788.97668  |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.477 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'NY.GDP.MKTP.KD.ZG'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+------------+
+| wdi_final.country_code  | wdi_final.indicator_code  | sum_value  |
++-------------------------+---------------------------+------------+
+| CHN                     | NY.GDP.MKTP.KD.ZG         | 190.63632  |
+| BGD                     | NY.GDP.MKTP.KD.ZG         | 131.98485  |
+| IND                     | NY.GDP.MKTP.KD.ZG         | 131.16232  |
+| PAK                     | NY.GDP.MKTP.KD.ZG         | 90.91655   |
+| ARE                     | NY.GDP.MKTP.KD.ZG         | 85.87208   |
+| RUS                     | NY.GDP.MKTP.KD.ZG         | 77.25373   |
+| USA                     | NY.GDP.MKTP.KD.ZG         | 44.87740   |
+| JPN                     | NY.GDP.MKTP.KD.ZG         | 13.93812   |
++-------------------------+---------------------------+------------+
+8 rows selected (2.504 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'GC.TAX.TOTL.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+-----------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |       sum_value       |
++-------------------------+---------------------------+-----------------------+
+| JPN                     | GC.TAX.TOTL.GD.ZS         | 65203565949323.21190  |
+| PAK                     | GC.TAX.TOTL.GD.ZS         | 64280440930143.48677  |
+| IND                     | GC.TAX.TOTL.GD.ZS         | 22487517468477.65008  |
+| ARE                     | GC.TAX.TOTL.GD.ZS         | 16437505125893.43575  |
+| CHN                     | GC.TAX.TOTL.GD.ZS         | 15239750960309.60197  |
+| BGD                     | GC.TAX.TOTL.GD.ZS         | 923125019348.35624    |
+| RUS                     | GC.TAX.TOTL.GD.ZS         | 290.52510             |
+| USA                     | GC.TAX.TOTL.GD.ZS         | 229.42049             |
++-------------------------+---------------------------+-----------------------+
+8 rows selected (2.519 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE
+. . . . . . . . . . . . . . . .> ;
+Error: Error while compiling statement: FAILED: ParseException line 10:0 cannot recognize input near 'ARE' ';' '<EOF>' in expression specification (state=42000,code=40000)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'NY.GNS.ICTR.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| ARE                     | NY.GNS.ICTR.ZS            | 65203565949.323214  |
+| CHN                     | NY.GNS.ICTR.ZS            | 1.002627            |
+| BGD                     | NY.GNS.ICTR.ZS            | 0.778399            |
+| IND                     | NY.GNS.ICTR.ZS            | 0.713278            |
+| JPN                     | NY.GNS.ICTR.ZS            | 0.619713            |
+| RUS                     | NY.GNS.ICTR.ZS            | 0.618715            |
+| USA                     | NY.GNS.ICTR.ZS            | 0.402552            |
+| PAK                     | NY.GNS.ICTR.ZS            | 0.357279            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.512 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'FP.CPI.TOTL.ZG'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| ARE                     | FP.CPI.TOTL.ZG            | 10260362068.564531  |
+| RUS                     | FP.CPI.TOTL.ZG            | 0.218360            |
+| PAK                     | FP.CPI.TOTL.ZG            | 0.174370            |
+| BGD                     | FP.CPI.TOTL.ZG            | 0.138094            |
+| IND                     | FP.CPI.TOTL.ZG            | 0.134975            |
+| USA                     | FP.CPI.TOTL.ZG            | 0.049342            |
+| CHN                     | FP.CPI.TOTL.ZG            | 0.048023            |
+| JPN                     | FP.CPI.TOTL.ZG            | 0.001849            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (4.068 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'NY.GSR.NFCY.CD'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| JPN                     | NY.GSR.NFCY.CD            | 12577417134.626510  |
+| ARE                     | NY.GSR.NFCY.CD            | 9639267392.149190   |
+| USA                     | NY.GSR.NFCY.CD            | 3606772000.000000   |
+| BGD                     | NY.GSR.NFCY.CD            | 192464589.446000    |
+| PAK                     | NY.GSR.NFCY.CD            | -80914010.000000    |
+| IND                     | NY.GSR.NFCY.CD            | -399775284.433000   |
+| CHN                     | NY.GSR.NFCY.CD            | -743756094.483000   |
+| RUS                     | NY.GSR.NFCY.CD            | -815843049.995000   |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.423 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'NY.ADJ.AEDU.CD'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| USA                     | NY.ADJ.AEDU.CD            | 16608000000.000000  |
+| ARE                     | NY.ADJ.AEDU.CD            | 9765247582.398510   |
+| JPN                     | NY.ADJ.AEDU.CD            | 3290000000.000000   |
+| CHN                     | NY.ADJ.AEDU.CD            | 2910966799.810000   |
+| IND                     | NY.ADJ.AEDU.CD            | 1111542163.280000   |
+| RUS                     | NY.ADJ.AEDU.CD            | 1072430941.531000   |
+| PAK                     | NY.ADJ.AEDU.CD            | 84574080.587000     |
+| BGD                     | NY.ADJ.AEDU.CD            | 60592219.910600     |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.427 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.SEC.UNER.LO.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| PAK                     | SE.SEC.UNER.LO.ZS         | 65203565949.323214  |
+| CHN                     | SE.SEC.UNER.LO.ZS         | 65203565949.323214  |
+| USA                     | SE.SEC.UNER.LO.ZS         | 59424808318.771562  |
+| IND                     | SE.SEC.UNER.LO.ZS         | 46853187381.357503  |
+| JPN                     | SE.SEC.UNER.LO.ZS         | 46325889750.049459  |
+| ARE                     | SE.SEC.UNER.LO.ZS         | 44863237684.404675  |
+| RUS                     | SE.SEC.UNER.LO.ZS         | 37005016680.006385  |
+| BGD                     | SE.SEC.UNER.LO.ZS         | 27874910212.146773  |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.506 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SL.TLF.0714.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| USA                     | SL.TLF.0714.ZS            | 65203565949.323214  |
+| RUS                     | SL.TLF.0714.ZS            | 65203565949.323214  |
+| JPN                     | SL.TLF.0714.ZS            | 65203565949.323214  |
+| CHN                     | SL.TLF.0714.ZS            | 65203565949.323214  |
+| ARE                     | SL.TLF.0714.ZS            | 65203565949.323214  |
+| PAK                     | SL.TLF.0714.ZS            | 60715564062.983718  |
+| BGD                     | SL.TLF.0714.ZS            | 59560952703.293001  |
+| IND                     | SL.TLF.0714.ZS            | 56549321941.429615  |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.408 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.PRM.UNER.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| PAK                     | SE.PRM.UNER.ZS            | 65203565949.323214  |
+| CHN                     | SE.PRM.UNER.ZS            | 65203565949.323214  |
+| BGD                     | SE.PRM.UNER.ZS            | 45454360817.960845  |
+| JPN                     | SE.PRM.UNER.ZS            | 37005016680.012748  |
+| USA                     | SE.PRM.UNER.ZS            | 33006700719.659233  |
+| ARE                     | SE.PRM.UNER.ZS            | 31126436999.511741  |
+| RUS                     | SE.PRM.UNER.ZS            | 24602239618.403715  |
+| IND                     | SE.PRM.UNER.ZS            | 10512594413.414713  |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.386 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.COM.DURS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| IND                     | SE.COM.DURS               | 12202457074.558608  |
+| JPN                     | SE.COM.DURS               | 9594000591.792510   |
+| USA                     | SE.COM.DURS               | 0.264000            |
+| PAK                     | SE.COM.DURS               | 0.264000            |
+| RUS                     | SE.COM.DURS               | 0.212000            |
+| CHN                     | SE.COM.DURS               | 0.198000            |
+| ARE                     | SE.COM.DURS               | 0.192000            |
+| BGD                     | SE.COM.DURS               | 0.110000            |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.379 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.TER.CUAT.BA.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| PAK                     | SE.TER.CUAT.BA.ZS         | 65203565949.323214  |
+| RUS                     | SE.TER.CUAT.BA.ZS         | 62968823948.772905  |
+| JPN                     | SE.TER.CUAT.BA.ZS         | 62968823948.733557  |
+| CHN                     | SE.TER.CUAT.BA.ZS         | 62968823948.717222  |
+| IND                     | SE.TER.CUAT.BA.ZS         | 52562795873.445309  |
+| USA                     | SE.TER.CUAT.BA.ZS         | 42203537387.829906  |
+| ARE                     | SE.TER.CUAT.BA.ZS         | 36731889158.662438  |
+| BGD                     | SE.TER.CUAT.BA.ZS         | 26031505717.575019  |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.411 seconds)
+0: jdbc:hive2://localhost:10000> SELECT
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code,
+. . . . . . . . . . . . . . . .>     SUM(wdi_final.value/1000) AS sum_value
+. . . . . . . . . . . . . . . .> FROM
+. . . . . . . . . . . . . . . .>     wdi_final
+. . . . . . . . . . . . . . . .> WHERE
+. . . . . . . . . . . . . . . .>     (wdi_final.year >= 2000 AND wdi_final.year <= 2022)
+. . . . . . . . . . . . . . . .>     AND wdi_final.country_code IN ('USA', 'CHN', 'IND', 'PAK', 'BGD', 'KOR', 'JPN', 'ARE', 'RUS')
+. . . . . . . . . . . . . . . .>     AND wdi_final.indicator_code = 'SE.XPD.TOTL.GD.ZS'
+. . . . . . . . . . . . . . . .> GROUP BY
+. . . . . . . . . . . . . . . .>     wdi_final.country_code,
+. . . . . . . . . . . . . . . .>     wdi_final.indicator_code
+. . . . . . . . . . . . . . . .> ORDER BY
+. . . . . . . . . . . . . . . .>     sum_value DESC;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++-------------------------+---------------------------+---------------------+
+| wdi_final.country_code  | wdi_final.indicator_code  |      sum_value      |
++-------------------------+---------------------------+---------------------+
+| ARE                     | SE.XPD.TOTL.GD.ZS         | 26031505717.513408  |
+| USA                     | SE.XPD.TOTL.GD.ZS         | 23796763716.946299  |
+| IND                     | SE.XPD.TOTL.GD.ZS         | 18666970264.447070  |
+| CHN                     | SE.XPD.TOTL.GD.ZS         | 15239750960.213648  |
+| RUS                     | SE.XPD.TOTL.GD.ZS         | 13361387805.864835  |
+| JPN                     | SE.XPD.TOTL.GD.ZS         | 11594306642.496511  |
+| BGD                     | SE.XPD.TOTL.GD.ZS         | 3583731027.712378   |
+| PAK                     | SE.XPD.TOTL.GD.ZS         | 3400814196.940652   |
++-------------------------+---------------------------+---------------------+
+8 rows selected (2.465 seconds)
+0: jdbc:hive2://localhost:10000>
+
