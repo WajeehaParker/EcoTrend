@@ -16,6 +16,7 @@ WDI_data = WDI_data.reset_index(drop=True)
 columns_to_drop = list(range(1960, 2000))
 columns_to_drop = [str(year) for year in columns_to_drop]
 WDI_data = WDI_data.drop(columns=columns_to_drop)
+WDI_data = WDI_data.drop(columns='2022')
 
 print(WDI_data.shape)
 
@@ -37,6 +38,7 @@ selected_indicators=['SP.POP.TOTL', 'SP.POP.TOTL.FE.IN' 'SP.POP.TOTL.MA.IN', 'SP
                      'BM.GSR.NFSV.CD', 'BX.GRT.TECH.CD.WD', 'DT.DOD.DECT.CD', 'NY.GDP.MKTP.CD', 'NY.GDP.PCAP.CD', 'FI.RES.TOTL.CD',
                      'GC.REV.XGRT.GD.ZS', 'BX.TRF.PWKR.CD.DT']
 
+########## inserting year based values in redis (key starting with Indicators) ##########
 for index, row in WDI_data.iterrows():
 
     if(row['Indicator Code'] in selected_indicators):
